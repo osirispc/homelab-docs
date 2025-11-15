@@ -10,7 +10,7 @@ Primary compute node of the Homelab.
 Houses several critical VMs:
 
 ### **pacard-sawmill (VM 901)**
-*Role:* Codemanagement VM  
+*Role:* Code-Server management VM  
 *IP:* 192.168.199.177  
 *Containers:*
 - portainer
