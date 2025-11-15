@@ -3,6 +3,9 @@
 Welcome to your homelab documentation.  
 Use this page as your starting point for everything in the Lodge.
 
+# Live Reload Test
+
+If you see this, the lodge is aligned.
 
 
 ---
