@@ -2,7 +2,7 @@
 
 **Role:** Backup / mirror media server  
 **OS:** Debian 12 (bookworm)  
-**Primary IP:** 192.168.199.
+**Primary IP:** 192.168.199.101
 **Status:** Active (standby replication node)
 
 ---
