@@ -8,7 +8,7 @@
 ---
 
 ## Overview
-The White Lodge hosts several vm's.  Tthe main RARR stack: Radarr, Sonarr, Jellyfin, qBittorrent, and Gluetun.  
+The White Lodge hosts several vm's.  The main RARR stack: Radarr, Sonarr, Jellyfin, qBittorrent, and Gluetun.  
 It serves as the production media hub for the network and the primary sync source for The Black Lodge.
 
 ---
