@@ -1,6 +1,6 @@
 # thewhitelodge
 
-**Role:** Primary media server (RARR stack master)  
+**Role:** Primary   
 **OS:** Debian 12 (bookworm)  
 **Primary IP:** 192.168.199.100 
 **Status:** Active
