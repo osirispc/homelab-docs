@@ -49,3 +49,19 @@ nav:
       - VM Creation SOP: guides/vm-create.md
       - Network Troubleshooting: guides/network-troubleshoot.md
       - Backup & Restore SOP: guides/backup-restore.md
+
+
+**Important:**  
+Mermaid diagrams only work inside triple backticks \`\`\`mermaid
+
+---
+
+# ✅ **3. Make sure it’s in the navigation (mkdocs.yml)**
+
+You already have:
+
+```yaml
+  - Infrastructure:
+      - Overview: infra/overview.md
+      - Network Diagram: infra/network-diagram.md
+
