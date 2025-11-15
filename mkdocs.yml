@@ -1,0 +1,34 @@
+site_name: Homelab Docs
+site_description: Documentation for Osiris' homelab and Lodge infrastructure
+theme:
+  name: material
+  features:
+    - navigation.expand
+    - navigation.sections
+    - navigation.instant
+    - content.code.copy
+    - toc.integrate
+
+nav:
+  - Home: index.md
+  - Cloudflare:
+      - Tunnel for Code-Server: cloudflare/cloudflare-tunnel-code-server.md
+  - Servers:
+      - Pacard Sawmill: servers/pacard-sawmill.md
+      - The White Lodge: servers/thewhitelodge.md
+      - The Black Lodge: servers/theblacklodge.md
+  - Portainer:
+      - Setup: portainer/setup.md
+      - Managing Containers: portainer/managing-containers.md
+  - Network:
+      - VLAN Setup: network/vlan-setup.md
+      - DNS Architecture: network/dns-architecture.md
+      - Firewall Rules: network/firewall-rules.md
+  - Rarr Stack:
+      - Overview: rarr-stack/overview.md
+      - Jellyfin: rarr-stack/jellyfin.md
+      - Radarr / Sonarr: rarr-stack/radarr-sonarr.md
+      - Backups: rarr-stack/backups.md
+  - Automation:
+      - Backup Scripts: automation/backup-scripts.md
+      - Monitoring: automation/monitoring.md
