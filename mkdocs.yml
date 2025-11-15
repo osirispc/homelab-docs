@@ -8,6 +8,8 @@ theme:
     - navigation.instant
     - content.code.copy
     - toc.integrate
+  extra_css:
+    - assets/styles/custom.extra_css
 
 nav:
   - Home: index.md
@@ -61,5 +63,4 @@ nav:
       - Network Troubleshooting: guides/network-troubleshoot.md
       - Backup & Restore SOP: guides/backup-restore.md
 
-extra_css:
-  - assets/styles/custom.css
+

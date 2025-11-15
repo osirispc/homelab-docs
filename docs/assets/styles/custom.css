@@ -1,0 +1,68 @@
+/* ---------- General Layout ---------- */
+.md-main {
+    background: #1a1a1a !important;
+}
+
+.md-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ---------- Headings ---------- */
+h1, h2, h3, h4 {
+    font-weight: 600 !important;
+    color: #f8f8f2 !important;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    border-bottom: 2px solid #b30000;
+    padding-bottom: 6px;
+}
+
+/* ---------- Links ---------- */
+a {
+    color: #ff4444 !important;
+}
+a:hover {
+    color: #ff8888 !important;
+    text-decoration: underline;
+}
+
+/* ---------- Cards & Code Blocks ---------- */
+.md-typeset code, .md-typeset pre {
+    background: #2a2a2a !important;
+    border-radius: 6px;
+    padding: 2px 6px;
+}
+
+pre code {
+    padding: 16px;
+    display: block;
+}
+
+/* ---------- Tables ---------- */
+.md-typeset table {
+    background: #222 !important;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.md-typeset table th {
+    background: #333 !important;
+    color: #fff !important;
+}
+.md-typeset table td {
+    background: #2a2a2a !important;
+    color: #eee;
+}
+
+/* ---------- Sidebar ---------- */
+.md-sidebar {
+    background-color: #111 !important;
+}
+.md-nav__item .md-nav__link {
+    color: #ddd !important;
+}
+.md-nav__item .md-nav__link--active {
+    color: #ff4444 !important;
+}
