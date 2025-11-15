@@ -8,8 +8,8 @@ theme:
     - navigation.instant
     - content.code.copy
     - toc.integrate
-  extra_css:
-    - assets/styles/custom.css
+extra_css:
+  - assets/styles/custom.css
 
 nav:
   - Home: index.md
