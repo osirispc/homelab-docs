@@ -124,3 +124,15 @@ body::before {
   opacity: 0.15;
   z-index: -1;
 }
+/* FBI Case Header */
+.md-header {
+  background: linear-gradient(to bottom, #2a2a2a, #111) !important;
+  border-bottom: 4px solid #b22222 !important;
+}
+
+.md-header__title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff !important;
+  font-weight: 700 !important;
+}
