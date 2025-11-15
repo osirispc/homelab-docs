@@ -1,6 +1,6 @@
 # theblacklodge
 
-**Role:** Secondary ProxBackup / mirror media server  
+**Role:** Secondary Proxmox NodeBackup / mirror media server  
 **OS:** Debian 12 (bookworm)  
 **Primary IP:** 192.168.199.101
 **Status:** Active (standby replication node)
