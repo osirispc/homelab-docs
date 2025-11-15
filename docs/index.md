@@ -1,3 +1,13 @@
-test Sat Nov 15 12:22:27 PM UTC 2025
-Log test Sat Nov 15 12:23:38 PM UTC 2025
-osiris ortiz
+# Homelab Overview
+
+Welcome to the Homelab Documentation Hub.
+
+This site contains:
+- Hardware inventory  
+- Proxmox cluster layout  
+- VM and service inventory  
+- Networking design  
+- Storage and backup strategy  
+- Application stack documentation  
+- Automation and monitoring  
+- Active projects  
