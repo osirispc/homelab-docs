@@ -2,7 +2,7 @@
 
 **Role:** Primary media server (RARR stack master)  
 **OS:** Debian 12 (bookworm)  
-**Primary IP:** 192.168.199. 
+**Primary IP:** 192.168.199.100 
 **Status:** Active
 
 ---
