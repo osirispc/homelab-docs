@@ -125,3 +125,31 @@ body::before {
   z-index: -1;
 }
 
+/* FBI CASE FILE STAMPS */
+
+.fbi-classified {
+  font-size: 2.2rem;
+  color: #b22222;
+  text-transform: uppercase;
+  font-weight: 900;
+  border: 4px double #b22222;
+  padding: 8px 18px;
+  display: inline-block;
+  transform: rotate(-4deg);
+  opacity: 0.75;
+  margin: 20px 0;
+}
+
+.fbi-evidence {
+  font-size: 1.8rem;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 800;
+  border: 3px solid #222;
+  padding: 6px 14px;
+  display: inline-block;
+  transform: rotate(2deg);
+  background: #f0ecde;
+  opacity: 0.85;
+  margin: 20px 0;
+}
