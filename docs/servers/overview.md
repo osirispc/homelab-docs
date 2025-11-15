@@ -1,4 +1,4 @@
-er# 🏔️ Homelab Servers Overview
+# 🏔️ Homelab Servers Overview
 
 This page documents each major server and VM running inside the Lodge architecture.  
 Each entry includes its purpose, IP, Docker containers, and key functions.
