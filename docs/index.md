@@ -87,6 +87,3 @@ If you want a slightly fancier layout, you can add this at the *bottom*:
     <td>How you reach code-server securely from anywhere.</td>
   </tr>
 </table>
-
-https://code.osirispc.com/
-http://192.168.199.177:8080/
