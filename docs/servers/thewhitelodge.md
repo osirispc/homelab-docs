@@ -1,6 +1,6 @@
 # thewhitelodge
 
-**Role:** Primary Proxmox  
+**Role:** Primary Proxmox Node  
 **OS:** Debian 12 (bookworm)  
 **Primary IP:** 192.168.199.100 
 **Status:** Active
