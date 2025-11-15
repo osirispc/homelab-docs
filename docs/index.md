@@ -1,4 +1,5 @@
- # 🏔️ The Lodge Homelab Docs
+ <div class="fbi-classified">CLASSIFIED</div>
+# 🏔️ The Lodge Homelab Docs
 
 Welcome to your homelab documentation.  
 Use this page as your starting point for everything in the Lodge.
