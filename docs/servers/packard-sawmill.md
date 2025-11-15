@@ -1,7 +1,7 @@
 # pacard-sawmill
 
 **Role:** Development server / code-server host  
-**OS:** Ubuntu 24.04 LTS 
+**OS:** Ubuntu 24.04 LTS ()
 **Primary IP:** 192.168.199.177  
 **Status:** Active
 
