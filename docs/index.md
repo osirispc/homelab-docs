@@ -93,3 +93,4 @@ If you want a slightly fancier layout, you can add this at the *bottom*:
   </tr>
 </table>
 
+<div class="fbi-classified">CLASSIFIED</div>
