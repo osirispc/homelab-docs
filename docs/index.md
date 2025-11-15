@@ -87,5 +87,3 @@ If you want a slightly fancier layout, you can add this at the *bottom*:
     <td>How you reach code-server securely from anywhere.</td>
   </tr>
 </table>
-# Test paste
-It works!
