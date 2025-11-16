@@ -1,4 +1,3 @@
- <div class="fbi-classified">CLASSIFIED</div>
 # 🏔️ The Lodge Homelab Docs
 
 Welcome to your homelab documentation.  
