@@ -7,6 +7,7 @@ Use this page as your starting point for everything in the Lodge.
 
 If you see this, the lodge is aligned.
 
+ <div class="fbi-classified">CLASSIFIED</div>
 
 ---
 
