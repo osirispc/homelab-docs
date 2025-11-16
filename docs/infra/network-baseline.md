@@ -6,4 +6,4 @@ You should store this document inside your **`homelab-docs`** repository under:
 docs/infra/network-baseline.md
 ```
 
-and link it in your MkDocs navigation under **Infrastructure → Network Baseline**.
+and link it in your MkDocs navigation under **Infrastructure → Network Baseli
