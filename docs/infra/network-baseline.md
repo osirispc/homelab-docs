@@ -7,5 +7,3 @@ docs/infra/network-baseline.md
 ```
 
 and link it in your MkDocs navigation under **Infrastructure → Network Baseline**.
-
-Would you like me to draft that MkDocs navigation entry for you next?
