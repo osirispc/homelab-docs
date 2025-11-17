@@ -1,0 +1,168 @@
+/* ===========================
+   FBI CASE FILE THEME
+   =========================== */
+
+/* Global background: slightly aged case file paper */
+body {
+  background: #f4f1e5 !important;
+  color: #2a2a2a !important;
+}
+
+/* Content container */
+.md-content {
+  background: transparent !important;
+}
+
+/* Typography: clean bureau style */
+.md-typeset {
+  font-family: "Roboto", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.3px;
+  color: #2a2a2a;
+}
+
+/* Header style like case file section labels */
+.md-typeset h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-bottom: 3px solid #111;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  color: #111 !important;
+}
+
+.md-typeset h2 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border-left: 6px solid #b22222; /* deep FBI red */
+  padding-left: 10px;
+  margin-top: 30px;
+  color: #222 !important;
+}
+
+.md-typeset h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333 !important;
+}
+
+/* Sidebar navigation — manila folder tab look */
+.md-sidebar {
+  background-color: #e8e2d3 !important;
+  border-right: 2px solid #b8b19e;
+}
+
+.md-nav__item .md-nav__link {
+  color: #3a3a3a !important;
+  font-weight: 500;
+}
+
+.md-nav__link--active {
+  font-weight: 700;
+  color: #8b0000 !important; /* FBI dark red */
+}
+
+/* Tables: structured report vibe */
+.md-typeset table {
+  background: #fdfbf6 !important;
+  border: 1px solid #b8b19e !important;
+  border-radius: 6px;
+}
+
+.md-typeset thead th {
+  background: #e5dfcf !important;
+  color: #111 !important;
+}
+
+.md-typeset td {
+  background: #fdfbf6 !important;
+  color: #333 !important;
+}
+
+/* Code blocks: FBI LAB EVIDENCE LABEL style */
+.md-typeset pre code {
+  background-color: #1a1a1a !important;
+  color: #e8e8e8 !important;
+  border-left: 5px solid #b22222;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+/* Links */
+a {
+  color: #8b0000 !important;
+}
+a:hover {
+  color: #b22222 !important;
+  text-decoration: underline;
+}
+
+/* Horizontal rule: investigation section break */
+.md-typeset hr {
+  border: 0;
+  height: 2px;
+  background: #2a2a2a;
+  margin: 30px 0;
+}
+
+/* Metadata or notes blocks */
+blockquote {
+  background: #ece7d9 !important;
+  border-left: 5px solid #b22222;
+  padding: 12px;
+  margin: 20px 0;
+  color: #333 !important;
+}
+
+/* Add slight texture for authenticity */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  opacity: 0.15;
+  z-index: -1;
+}
+
+/* FBI CASE FILE STAMPS */
+
+.fbi-classified {
+  font-size: 2.2rem;
+  color: #b22222;
+  text-transform: uppercase;
+  font-weight: 900;
+  border: 4px double #b22222;
+  padding: 8px 18px;
+  display: inline-block;
+  transform: rotate(-4deg);
+  opacity: 0.75;
+  margin: 20px 0;
+}
+
+.fbi-evidence {
+  font-size: 1.8rem;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 800;
+  border: 3px solid #222;
+  padding: 6px 14px;
+  display: inline-block;
+  transform: rotate(2deg);
+  background: #f0ecde;
+  opacity: 0.85;
+  margin: 20px 0;
+}
+
+.fbi-top-secret {
+  font-size: 2rem;
+  color: #8b0000;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 10px 18px;
+  border: 3px dashed #8b0000;
+  display: inline-block;
+  transform: rotate(-3deg);
+  opacity: 0.8;
+  background: #fff;
+}

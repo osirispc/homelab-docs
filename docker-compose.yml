@@ -1,0 +1,9 @@
+services:
+  mkdocs-static:
+    image: nginx:alpine
+    container_name: mkdocs-static
+    ports:
+      - "8002:80"
+    volumes:
+      - /home/osirisortiz/projects/homelab-docs/site:/usr/share/nginx/html:ro
+    restart: unless-stopped
