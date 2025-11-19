@@ -1,6 +1,6 @@
 # 🏔️ The Lodge Homelab Docs
 
-
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
 
 Welcome to your homelab documentation.  
 Use this page as your starting point for everything in the Lodge.
