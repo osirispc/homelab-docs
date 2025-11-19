@@ -1,5 +1,6 @@
 site_name: Homelab Docs
 site_description: Documentation for Osiris' homelab and Lodge infrastructure
+
 theme:
   name: material
   features:
@@ -8,8 +9,8 @@ theme:
     - navigation.instant
     - content.code.copy
     - toc.integrate
-extra_css:
-  - assets/styles/custom.css
+  extra_css:
+    - assets/styles/custom.css
 
 nav:
   - Home: index.md
@@ -19,7 +20,8 @@ nav:
       - Network Diagram: infra/network-diagram.md
       - Storage & Backups: infra/storage-backups.md
       - Automation & Workflows: infra/automation.md
-      - DNS: infra/dns-pihole-unbound.md
+      - DNS & Local Resolution: infra/dns-pihole-unbound.md
+      - Network Baseline: infra/network-baseline.md
 
   - Servers:
       - Pacard Sawmill: servers/pacard-sawmill.md
@@ -30,7 +32,7 @@ nav:
       - DNS Gateway (VM 198): servers/dns-gateway.md
       - The White Lodge (PVE Node): servers/thewhitelodge.md
       - The Black Lodge (PVE Node): servers/theblacklodge.md
-      - The Red Room (PVE Node / PBS): servers/theredroom.md
+      - The Red Room (PBS Node): servers/theredroom.md
 
   - Applications:
       - Media:
@@ -56,12 +58,10 @@ nav:
 
   - Cloudflare:
       - Tunnel for Code-Server: cloudflare/cloudflare-tunnel-code-server.md
-      - Future Tunnels: cloudflare/tunnels.md
+      - Other Tunnels: cloudflare/tunnels.md
 
   - Guides:
       - Container Deployment SOP: guides/container-deploy.md
       - VM Creation SOP: guides/vm-create.md
       - Network Troubleshooting: guides/network-troubleshoot.md
       - Backup & Restore SOP: guides/backup-restore.md
-
-
