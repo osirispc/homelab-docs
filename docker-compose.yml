@@ -1,9 +1,10 @@
 services:
-  mkdocs-static:
-    image: nginx:alpine
-    container_name: mkdocs-static
+  mkdocs:
+    image: squidfunk/mkdocs-material:9.5.31
+    container_name: mkdocs-homelab
+    command: mkdocs serve -a 0.0.0.0:8000
     ports:
-      - "8002:80"
+      - "8002:8000"
     volumes:
-      - /home/osirisortiz/projects/homelab-docs/site:/usr/share/nginx/html:ro
+      - ../:/docs/project
     restart: unless-stopped
