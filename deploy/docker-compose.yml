@@ -4,6 +4,7 @@ services:
   mkdocs:
     image: squidfunk/mkdocs-material:latest
     container_name: mkdocs-homelab
+    working_dir: /docs
     command: mkdocs serve -a 0.0.0.0:8000
     ports:
       - "8002:8000"
