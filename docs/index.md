@@ -1,6 +1,6 @@
 # 🏔️ The Lodge Homelab Docs
 
-#Live Update
+#Live Update from Osiris
 
 Welcome to your homelab documentation.  
 Use this page as your starting point for everything in the Lodge.
