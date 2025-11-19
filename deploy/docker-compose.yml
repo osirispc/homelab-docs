@@ -1,20 +1,20 @@
 services:
-  mkdocs-dev:
+  mkdocs-homelab:
+    image: squidfunk/mkdocs-material
+    container_name: mkdocs-homelab
+    command: mkdocs serve -a 0.0.0.0:8000
+    ports:
+      - "8002:8000"
+    volumes:
+      - ../:/docs
+    restart: unless-stopped
+
+  mkdocs-homelab-dev:
     image: squidfunk/mkdocs-material
     container_name: mkdocs-homelab-dev
     command: mkdocs serve --dev-addr=0.0.0.0:8000
     ports:
       - "8001:8000"
-    volumes:
-      - ../:/docs
-    restart: unless-stopped
-
-  mkdocs-prod:
-    image: squidfunk/mkdocs-material
-    container_name: mkdocs-homelab
-    command: sh -c "mkdocs build --clean && mkdocs serve --dev-addr=0.0.0.0:8000"
-    ports:
-      - "8002:8000"
     volumes:
       - ../:/docs
     restart: unless-stopped
