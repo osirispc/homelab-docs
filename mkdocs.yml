@@ -19,6 +19,7 @@ nav:
       - Network Diagram: infra/network-diagram.md
       - Storage & Backups: infra/storage-backups.md
       - Automation & Workflows: infra/automation.md
+      - DNS: infra/dns-pihole-unbound.md
 
   - Servers:
       - Pacard Sawmill: servers/pacard-sawmill.md
