@@ -1,4 +1,3 @@
-
 # 📘 **Pi-hole + Unbound Deployment (Host Networking Mode)**
 
 *A Lodge Infrastructure Case File*
