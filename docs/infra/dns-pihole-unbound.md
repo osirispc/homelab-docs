@@ -1,18 +1,3 @@
-Absolutely, Osiris.
-Let’s craft **clean, complete, professional documentation** you can drop straight into your MkDocs homelab site — written like a Lodge case file, but clear, technical, and ready for your future self or your boss.
-
-Below is a ready-to-paste **Markdown doc** covering:
-
-* Overview
-* Architecture diagram
-* VM setup
-* Docker installation
-* Pi-hole + Unbound deploy
-* Testing
-* Troubleshooting
-* Best practices
-
----
 
 # 📘 **Pi-hole + Unbound Deployment (Host Networking Mode)**
 
