@@ -7,8 +7,10 @@
 Welcome to your homelab documentation.  
 Use this page as your starting point for everything in the Lodge.
 
- <div class="fbi-classified">CLASSIFIED</div>
+<div class="case-stamp">FEDERAL CASE FILE</div>
 
+# Operation LODGE CASCADE
+## Case No. 199-XX-RED-RM
 ---
 
 ## 🔧 Infrastructure

@@ -3,6 +3,7 @@ site_description: Documentation for Osiris' homelab and Lodge infrastructure
 
 theme:
   name: material
+  font: false           # turn off Material's default fonts
   features:
     - navigation.expand
     - navigation.sections
@@ -11,6 +12,8 @@ theme:
     - toc.integrate
   extra_css:
     - assets/styles/custom.css
+    - assets/styles/casefile.css
+    - https://fonts.googleapis.com/css2?family=Special+Elite&display=swap
 
 nav:
   - Case File Index: index.md
