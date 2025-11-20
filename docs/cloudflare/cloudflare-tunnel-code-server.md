@@ -1,4 +1,4 @@
-# **Secure Cloudflare Tunnel Access to Code-Server (Pacard-sawmill)**
+# **Secure Cloudflare Tunnel Access to Code-Server (acard-sawmill)**
 
 This document outlines the full configuration used to expose `code-server` on **pacard-sawmill** securely over the internet using **Cloudflare Tunnel** and **Cloudflare Zero Trust**.
 This ensures maximum security, no LAN exposure, and MFA-protected access from anywhere.
