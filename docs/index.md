@@ -1,6 +1,6 @@
 # 🏔️ The Lodge Homelab Docs
 
-#Live Update from Gordo
+#Live Update from Cordon 
 
 Welcome to your homelab documentation.  
 Use this page as your starting point for everything in the Lodge.
