@@ -56,16 +56,6 @@ Done.
 
 # 🌲 **2) Add a Page to Your Homelab Docs (so you never forget this setup)**
 
-We’ll create:
-
-```
-docs/guides/mkdocs-dev-setup.md
-```
-
-Here’s the content. Copy-paste it into that file:
-
----
-
 ## **mkdocs-dev-setup.md**
 
 ````md
