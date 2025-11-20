@@ -1,0 +1,42 @@
+/* ==== Case File Aesthetic ==== */
+
+/* Typewriter font everywhere */
+body,
+.md-content,
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Special Elite", "Courier New", Courier, monospace;
+}
+
+/* Paper-like main content area */
+.md-main__inner {
+    background: #f4f1e9;
+    border-left: 1px solid #d6d3c4;
+    border-right: 1px solid #d6d3c4;
+    padding: 2rem;
+}
+
+/* Slight drop shadow like a document on a desk */
+.md-content {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Red rubber-stamp style label */
+.case-stamp {
+    display: inline-block;
+    border: 2px solid #a00;
+    color: #a00;
+    padding: 4px 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transform: rotate(-3deg);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+/* Redacted text blocks */
+.redacted {
+    background: black;
+    color: black;
+    padding: 0 8px;
+    border-radius: 2px;
+}
