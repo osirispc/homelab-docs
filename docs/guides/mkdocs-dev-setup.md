@@ -69,7 +69,7 @@ cd ~/projects/homelab-docs
 
 ---
 
-## 2. Activate the Python Virtual Environment
+2. Activate the Python Virtual Environment
 
 ```bash
 source .venv/bin/activate
