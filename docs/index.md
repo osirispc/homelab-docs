@@ -1,6 +1,6 @@
 # 🏔️ The Lodge Homelab Docs
 
-#Live Update from Gordon Cole
+
 🔥 DEV SERVER LIVE RELOAD PAGE
 
 
