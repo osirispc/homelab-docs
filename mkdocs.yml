@@ -65,3 +65,7 @@ nav:
       - VM Creation SOP: guides/vm-create.md
       - Network Troubleshooting: guides/network-troubleshoot.md
       - Backup & Restore SOP: guides/backup-restore.md
+
+watch:
+  - docs
+
