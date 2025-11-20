@@ -1,22 +1,39 @@
 site_name: Homelab Docs
 site_description: Documentation for Osiris' homelab and Lodge infrastructure
+site_url: https://osirispc.github.io/homelab-docs/
 
+# Material theme + Jinja overrides (for bullet-proof CSS include)
 theme:
   name: material
-  font: false           # turn off Material's default fonts
+  font: false
+  custom_dir: overrides
   features:
     - navigation.expand
     - navigation.sections
     - navigation.instant
     - content.code.copy
     - toc.integrate
+
+# Keep CSS at top level (MkDocs ignores it if nested under theme)
 extra_css:
   - assets/styles/custom.css
   - assets/styles/casefile.css
   - https://fonts.googleapis.com/css2?family=Special+Elite&display=swap
 
+# Helps paths resolve correctly behind code-server's /proxy/8002/
 use_directory_urls: false
 
+# Extensions that need no extra installs (safe defaults)
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - footnotes
+  - attr_list
+  - md_in_html
+  - tables
+
+# Clean, case-file style navigation
 nav:
   - Case File Index: index.md
 
@@ -36,6 +53,3 @@ nav:
       - Red Room Notes: extra/red-room.md
       - Owl Sightings: extra/owls.md
       - Agent Briefings: extra/briefings.md
-watch:
-  - docs
-

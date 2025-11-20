@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <!-- Force-load our CSS with a proxy-safe URL -->
+  <link rel="stylesheet" href="{{ 'assets/styles/casefile.css' | url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap">
+{% endblock %}
