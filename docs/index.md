@@ -1,6 +1,7 @@
 # 🏔️ The Lodge Homelab Docs
 
-#Live Update from Gordon✔ LIVE RELOAD SUCCESS TEST
+#Live Update from Gordon✔ LIVE RELOAD SUCCESS TESTpppp
+🔥 DEV SERVER LIVE RELOAD TEST
 
 
 Welcome to your homelab documentation.  
