@@ -1,6 +1,6 @@
 # 🏔️ The Lodge Homelab Docs
 
-#Live Update from Cordon Cole to Dale C00pe
+#Live Update from Cordon Cole to Dale C0
 
 Welcome to your homelab documentation.  
 Use this page as your starting point for everything in the Lodge.
