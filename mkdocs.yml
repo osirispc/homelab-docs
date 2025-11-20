@@ -10,10 +10,12 @@ theme:
     - navigation.instant
     - content.code.copy
     - toc.integrate
-  extra_css:
-    - assets/styles/custom.css
-    - assets/styles/casefile.css
-    - https://fonts.googleapis.com/css2?family=Special+Elite&display=swap
+extra_css:
+  - assets/styles/custom.css
+  - assets/styles/casefile.css
+  - https://fonts.googleapis.com/css2?family=Special+Elite&display=swap
+
+use_directory_urls: false
 
 nav:
   - Case File Index: index.md

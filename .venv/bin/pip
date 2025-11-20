@@ -1,4 +1,4 @@
-#!/home/osirisortiz/projects/homelab-docs/.venv/bin/python3
+#!/home/osirisortiz/projects/homelab-docs/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
