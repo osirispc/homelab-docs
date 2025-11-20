@@ -54,12 +54,7 @@ Done.
 
 ---
 
-# 🌲 **2) Add a Page to Your Homelab Docs (so you never forget this setup)**
-
-## **mkdocs-dev-setup.md**
-
-````md
-# Homelab Docs – MkDocs Dev Environment Setup
+# 🌲 **2) Homelab Docs – MkDocs Dev Environment Setup
 
 This page explains how to start the development server for the Homelab Docs project.  
 Following these steps ensures live reload, correct file watching, and a clean workflow.
