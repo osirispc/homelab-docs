@@ -65,9 +65,8 @@ Following these steps ensures live reload, correct file watching, and a clean wo
 
 ```bash
 cd ~/projects/homelab-docs
-````
+```
 
----
 
 2. Activate the Python Virtual Environment
 
