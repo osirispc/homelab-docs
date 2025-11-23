@@ -35,27 +35,42 @@ markdown_extensions:
 
 # Clean, case-file style navigation
 nav:
-  - Case File Index: index.md
+  - Homelab Docs: index.md
+  - 📁 Case File Index:
+      - Case File Index: casefile/index.md
+      - Red Room Notes: redroom/notes.md
+      - Classified Addendums: casefile/addendums.md
+      - Owl Sightings: casefile/owl-sightings.md
+      - Agent Briefings: casefile/briefings.md
 
-  - The Lodges:
-      - Pacard Sawmill: servers/pacard-sawmill.md
-      - The White Lodge: servers/thewhitelodge.md
-      - The Black Lodge: servers/theblacklodge.md
-
-  - Infrastructure:
+  - 📁 Infrastructure:
       - Overview: infra/overview.md
       - Network Diagram: infra/network-diagram.md
       - Network Baseline: infra/network-baseline.md
-      - DNS (Pi-hole + Unbound): infra/dns-pihole-unbound.md
+      - DNS (Pi-hole + Unbound): infra/dns.md
+      - Storage & Backups: infra/storage.md
+      - ZFS & VM Mirrors: infra/zfs.md
 
-  - Cloudflare Operations:
-      - Code-Server Tunnel: cloudflare/cloudflare-tunnel-code-server.md
+  - 📁 The Lodges:
+      - Packard Sawmill: lodges/packard-sawmill.md
+      - The White Lodge: lodges/white-lodge.md
+      - The Black Lodge: lodges/black-lodge.md
+      - The Owl Cave (NAS): lodges/owlcave.md
+      - The Bookhouse (Readarr VM): lodges/bookhouse.md
+      - Gordon Cole Server: lodges/gordon-cole.md
+      - RARR (Main Stack): lodges/rarr.md
 
-  - Guides:
-      - MkDocs Dev Setup: guides/mkdocs-dev-setup.md
+  - 📁 Operations:
+      - Cloudflare Operations: ops/cloudflare.md
+      - Code-Server Tunnel: ops/codeserver.md
+      - VPN Stack: ops/vpn.md
+      - Automation: ops/automation.md
+      - Failover Cascade Model: ops/cascade.md
+      - Jellyfin Infrastructure: ops/jellyfin.md
 
-  - Classified Addendums:
-      - Red Room Notes: extra/red-room.md
-      - Owl Sightings: extra/owls.md
-      - Agent Briefings: extra/briefings.md
+  - 📁 Guides:
+      - MkDocs Dev Setup: guides/mkdocs-dev.md
+      - Proxmox Tips: guides/proxmox-tips.md
+      - VM Setup Guides: guides/vm-setup.md
+      - Docker Notes: guides/docker.md
 
