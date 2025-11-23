@@ -47,6 +47,7 @@ nav:
 
   - 📁 Infrastructure:
       - Overview: infra/overview.md
+      - MkDocs Docker Instant Reload Fix: infra/mkdocs-docker-instant-reload.md
       - Network Diagram: infra/network-diagram.md
       - Network Baseline: infra/network-baseline.md
       - DNS (Pi-hole + Unbound): infra/dns.md
