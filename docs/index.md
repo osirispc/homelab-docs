@@ -36,15 +36,15 @@ Proceed with caution. Some documents may appear…
 - [Storage & Backups](infra/storage.md)
 
 ---
-<div class="casefile-tabs">
+<div>
   
-</div>
+
 
 ## 🏔 The Lodges
 - [Packard Sawmill](lodges/packard-sawmill.md)
 - [The White Lodge](lodges/white-lodge.md)
 - [The Black Lodge](lodges/black-lodge.md)
-
+</div>
 ---
 <div class="casefile-tabs">
  
