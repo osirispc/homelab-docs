@@ -1,3 +1,9 @@
+<div class="casefile-tabs">
+  <div class="casefile-tab active">Casefile</div>
+  <div class="casefile-tab">Infrastructure</div>
+  <div class="casefile-tab">Lodges</div>
+  <div class="casefile-tab">Ops</div>
+</div>
 # 🗂️ OPERATION LODGE CASCADE
 <div class="casefile-stamp">FEDERAL CASE FILE</div>
 
@@ -16,6 +22,12 @@ Proceed with caution. Some documents may appear…
 **altered** by forces unknown.
 
 ---
+<div class="casefile-tabs">
+  <div class="casefile-tab">Casefile</div>
+  <div class="casefile-tab active">Infrastructure</div>
+  <div class="casefile-tab">Lodges</div>
+  <div class="casefile-tab">Ops</div>
+</div>
 
 ## 🔧 Infrastructure
 - [Infrastructure Overview](infra/overview.md)
@@ -24,6 +36,12 @@ Proceed with caution. Some documents may appear…
 - [Storage & Backups](infra/storage.md)
 
 ---
+<div class="casefile-tabs">
+  <div class="casefile-tab">Casefile</div>
+  <div class="casefile-tab">Infrastructure</div>
+  <div class="casefile-tab active">Lodges</div>
+  <div class="casefile-tab">Ops</div>
+</div>
 
 ## 🏔 The Lodges
 - [Packard Sawmill](lodges/packard-sawmill.md)
@@ -31,6 +49,12 @@ Proceed with caution. Some documents may appear…
 - [The Black Lodge](lodges/black-lodge.md)
 
 ---
+<div class="casefile-tabs">
+  <div class="casefile-tab">Casefile</div>
+  <div class="casefile-tab">Infrastructure</div>
+  <div class="casefile-tab">Lodges</div>
+  <div class="casefile-tab active">Ops</div>
+</div>
 
 ## 📡 Operations
 - [VPN Stack](ops/vpn.md)
