@@ -16,7 +16,6 @@ theme:
 
 # Keep CSS at top level (MkDocs ignores it if nested under theme)
 extra_css:
-  - assets/styles/test.css
 
 # Helps paths resolve correctly behind code-server's /proxy/8002/
 use_directory_urls: true
