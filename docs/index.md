@@ -15,6 +15,9 @@ You are viewing the central dossier for **The Lodge Homelab**,
 a classified technology hub maintained deep within the Cascades.
 
 ---
+<div class="casefile-tabs">
+  
+</div>
 
 ## 🔻 CASE NO. 199-XX-RED-RM
 This file contains technical intelligence, infrastructure layouts,  
