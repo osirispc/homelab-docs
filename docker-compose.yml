@@ -2,9 +2,8 @@ services:
   mkdocs:
     image: squidfunk/mkdocs-material:9.5.31
     container_name: mkdocs-homelab
-    command: mkdocs serve -a 0.0.0.0:8000
     ports:
       - "8002:8000"
     volumes:
-      - ../:/docs/project
+      - ./:/docs
     restart: unless-stopped
