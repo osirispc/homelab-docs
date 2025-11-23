@@ -1,42 +1,69 @@
-/* ==== Case File Aesthetic ==== */
+/* TWIN PEAKS CASE FILE AESTHETIC */
 
-/* Typewriter font everywhere */
-body,
-.md-content,
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Special Elite", "Courier New", Courier, monospace;
+/* --- Background: Dark FBI Case File + Lodge tones --- */
+body {
+    background-color: #1d1b1a;
+    background-image: url('../images/paper_fibers_dark.png');
+    background-size: 600px;
+    color: #e5d9c5;
 }
 
-/* Paper-like main content area */
-.md-main__inner {
-    background: #f4f1e9;
-    border-left: 1px solid #d6d3c4;
-    border-right: 1px solid #d6d3c4;
-    padding: 2rem;
+/* --- Sidebar: Dark manila file folder --- */
+.md-sidebar--primary {
+    background: #2b2725;
+    border-right: 2px solid #3a3532;
+    box-shadow: 5px 0 10px rgba(0,0,0,0.4);
 }
 
-/* Slight drop shadow like a document on a desk */
-.md-content {
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+/* Sidebar text */
+.md-nav__link {
+    font-family: 'Special Elite', monospace;
+    color: #e7dbc8 !important;
 }
 
-/* Red rubber-stamp style label */
-.case-stamp {
-    display: inline-block;
-    border: 2px solid #a00;
-    color: #a00;
-    padding: 4px 10px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    transform: rotate(-3deg);
-    margin-bottom: 1rem;
-    text-transform: uppercase;
+/* Active page highlight */
+.md-nav__item--active > .md-nav__link {
+    background: rgba(255,0,0,0.15);
+    border-left: 4px solid #c30000;
 }
 
-/* Redacted text blocks */
+/* --- Typewriter headings --- */
+h1, h2, h3, h4, h5 {
+    font-family: 'Special Elite', monospace;
+    border-bottom: 2px solid #c30000;
+    padding-bottom: 4px;
+}
+
+/* --- Redacted effect for certain spans --- */
 .redacted {
-    background: black;
-    color: black;
-    padding: 0 8px;
+    background: #000;
+    color: #000;
+    padding: 2px 6px;
     border-radius: 2px;
+}
+
+/* --- CASE FILE Stamp --- */
+.casefile-stamp {
+    display: inline-block;
+    border: 2px solid #c30000;
+    color: #c30000;
+    padding: 4px 12px;
+    font-family: 'Special Elite';
+    font-size: 1.1em;
+    transform: rotate(-5deg);
+    margin: 12px 0;
+}
+
+/* --- Page Container --- */
+.md-content {
+    background: rgba(35,32,30,0.85);
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* --- Links --- */
+a {
+    color: #cf3a3a;
+    text-decoration: none;
 }
