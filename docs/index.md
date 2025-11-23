@@ -24,12 +24,6 @@ Proceed with caution. Some documents may appear…
 **altered** by forces unknown.
 
 ---
-<div class="casefile-tabs">
-  <div class="casefile-tab">Casefile</div>
-  <div class="casefile-tab active">Infrastructure</div>
-  <div class="casefile-tab">Lodges</div>
-  <div class="casefile-tab">Ops</div>
-</div>
 
 ## 🔧 Infrastructure
 - [Infrastructure Overview](infra/overview.md)
