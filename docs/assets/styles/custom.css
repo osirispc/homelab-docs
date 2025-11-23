@@ -166,3 +166,28 @@ body::before {
   opacity: 0.8;
   background: #fff;
 }
+.lodge-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 12px 0;
+  flex-wrap: wrap;
+}
+
+.tab-link {
+  padding: 6px 14px;
+  background: #f3e9d7;
+  border: 1px solid #c5b9a5;
+  border-radius: 4px;
+  font-family: "Special Elite", monospace;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.2s ease;
+}
+
+.tab-link:hover {
+  background: #e6d9c8;
+}
+
+.tab-link:active {
+  background: #dcd0bd;
+}
