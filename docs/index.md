@@ -47,17 +47,14 @@ Proceed with caution. Some documents may appear…
 
 ---
 <div class="casefile-tabs">
-  <div class="casefile-tab">Casefile</div>
-  <div class="casefile-tab">Infrastructure</div>
-  <div class="casefile-tab">Lodges</div>
-  <div class="casefile-tab active">Ops</div>
-</div>
+ 
+
 
 ## 📡 Operations
 - [VPN Stack](ops/vpn.md)
 - [Cloudflare Operations](ops/cloudflare.md)
 - [Failover Cascade Model](ops/cascade.md)
-
+</div>
 ---
 
 ## 🔎 Additional Case Files
