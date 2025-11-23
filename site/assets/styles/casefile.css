@@ -67,3 +67,57 @@ a {
     color: #cf3a3a;
     text-decoration: none;
 }
+.casefile-sidebar {
+    padding: 1rem;
+    background: #f6f2e8;
+    border-right: 4px solid #c2b8a3;
+    box-shadow: inset -2px 0 4px rgba(0,0,0,0.1);
+    font-family: 'Special Elite', monospace;
+}
+
+.drawer-label {
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #444;
+    margin-bottom: 0.75rem;
+    display: block;
+    border-bottom: 2px solid #a99f8a;
+    padding-bottom: 0.25rem;
+}
+
+.folder-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.folder-tab {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: #faf7ef;
+    border-left: 8px solid #d5c9b6;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+
+.folder-name {
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.35rem;
+}
+
+.sub-items {
+    list-style: none;
+    margin-left: 0.75rem;
+}
+
+.sub-link a {
+    color: #222;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.sub-link a:hover {
+    text-decoration: underline;
+}
