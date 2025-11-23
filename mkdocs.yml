@@ -24,6 +24,7 @@ extra_css:
 # Helps paths resolve correctly behind code-server's /proxy/8002/
 use_directory_urls: false
 
+
 # Extensions that need no extra installs (safe defaults)
 markdown_extensions:
   - admonition
