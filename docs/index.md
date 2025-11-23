@@ -30,10 +30,10 @@ Proceed with caution. Some documents may appear…
 
 
 ## 🔧 Infrastructure
-- [Infrastructure Overview](infra/overview.md)
-- [Network Diagram](infra/network-diagram.md)
-- [DNS Operations](infra/dns.md)
-- [Storage & Backups](infra/storage.md)
+- [Infrastructure Overview](infra/overview/)
+- [Network Diagram](infra/network-diagram/)
+- [DNS Operations](infra/dns/)
+- [Storage & Backups](infra/storage/)
 
 ---
 <div>
