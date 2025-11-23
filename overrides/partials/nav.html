@@ -1,0 +1,28 @@
+{% set tabs = [
+    ("📁 Case File Index", "casefile"),
+    ("📁 Infrastructure", "infra"),
+    ("📁 The Lodges", "lodges"),
+    ("📁 Operations", "ops"),
+    ("📁 Guides", "guides")
+] %}
+
+<nav class="md-nav md-nav--primary casefile-sidebar">
+  <label class="drawer-label">CASEFILE DRAWER</label>
+
+  <ul class="folder-list">
+    {% for label, prefix in tabs %}
+    <li class="folder-tab">
+      <span class="folder-name">{{ label }}</span>
+      <ul class="sub-items">
+        {% for item in nav %}
+          {% if item.file and item.file.src_path.startswith(prefix) %}
+            <li class="sub-link">
+              <a href="{{ item.url | url }}">{{ item.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
