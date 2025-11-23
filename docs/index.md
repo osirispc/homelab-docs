@@ -41,9 +41,9 @@ Proceed with caution. Some documents may appear…
 
 
 ## 🏔 The Lodges
-- [Packard Sawmill](lodges/packard-sawmill.md)
-- [The White Lodge](lodges/white-lodge.md)
-- [The Black Lodge](lodges/black-lodge.md)
+- [Packard Sawmill](lodges/packard-sawmill/)
+- [The White Lodge](lodges/white-lodge/)
+- [The Black Lodge](lodges/black-lodge/)
 </div>
 ---
 <div class="casefile-tabs">
@@ -51,16 +51,16 @@ Proceed with caution. Some documents may appear…
 
 
 ## 📡 Operations
-- [VPN Stack](ops/vpn.md)
-- [Cloudflare Operations](ops/cloudflare.md)
-- [Failover Cascade Model](ops/cascade.md)
+- [VPN Stack](ops/vpn/)
+- [Cloudflare Operations](ops/cloudflare/)
+- [Failover Cascade Model](ops/cascade/)
 </div>
 ---
 
 ## 🔎 Additional Case Files
-- [Red Room Notes](redroom/notes.md)
-- [Owl Sightings](casefile/owl-sightings.md)
-- [Agent Briefings](casefile/briefings.md)
+- [Red Room Notes](redroom/notes/)
+- [Owl Sightings](casefile/owl-sightings/)
+- [Agent Briefings](casefile/briefings/)
 
 ---
 
