@@ -34,10 +34,7 @@ Proceed with caution. Some documents may appear…
 
 ---
 <div class="casefile-tabs">
-  <div class="casefile-tab">Casefile</div>
-  <div class="casefile-tab">Infrastructure</div>
-  <div class="casefile-tab active">Lodges</div>
-  <div class="casefile-tab">Ops</div>
+  
 </div>
 
 ## 🏔 The Lodges
