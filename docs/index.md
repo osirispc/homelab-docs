@@ -1,3 +1,9 @@
+<div class="lodge-tabs">
+  <a href="casefile/index/" class="tab-link">CASEFILE</a>
+  <a href="infra/overview/" class="tab-link">INFRASTRUCTURE</a>
+  <a href="servers/thewhitelodge/" class="tab-link">LODGES</a>
+  <a href="cloudflare/cloudflare-tunnel-code-server/" class="tab-link">OPS</a>
+</div>
 <div class="casefile-tabs">
   <div class="casefile-tab active">Casefile</div>
   <div class="casefile-tab">Infrastructure</div>
