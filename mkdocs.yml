@@ -39,17 +39,23 @@ nav:
 
   - The Lodges:
       - Pacard Sawmill: servers/pacard-sawmill.md
-      - Gordon Cole: servers/gordon-cole.md
-      - Bookhouse: servers/bookhouse.md
-      - Blockbuster: servers/blockbuster.md
+      - The White Lodge: servers/thewhitelodge.md
+      - The Black Lodge: servers/theblacklodge.md
 
   - Infrastructure:
       - Overview: infra/overview.md
       - Network Diagram: infra/network-diagram.md
-      - Storage & Backups: infra/storage-backups.md
-      - Automation & Workflows: infra/automation.md
+      - Network Baseline: infra/network-baseline.md
+      - DNS (Pi-hole + Unbound): infra/dns-pihole-unbound.md
+
+  - Cloudflare Operations:
+      - Code-Server Tunnel: cloudflare/cloudflare-tunnel-code-server.md
+
+  - Guides:
+      - MkDocs Dev Setup: guides/mkdocs-dev-setup.md
 
   - Classified Addendums:
       - Red Room Notes: extra/red-room.md
       - Owl Sightings: extra/owls.md
       - Agent Briefings: extra/briefings.md
+
