@@ -16,6 +16,9 @@ theme:
 
 # Keep CSS at top level (MkDocs ignores it if nested under theme)
 extra_css:
+  - assets/styles/custom.css
+  - assets/styles/casefile.css
+  - https://fonts.googleapis.com/css2?family=Special+Elite&display=swap
 
 # Helps paths resolve correctly behind code-server's /proxy/8002/
 use_directory_urls: true
