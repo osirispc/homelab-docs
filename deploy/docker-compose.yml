@@ -2,9 +2,12 @@ services:
   mkdocs:
     image: squidfunk/mkdocs-material:9.5.31
     container_name: mkdocs-homelab
-    command: mkdocs serve -a 0.0.0.0:8000
     ports:
       - "8002:8000"
     volumes:
-      - ../:/docs
+      - /home/osirisortiz/projects/homelab-docs:/docs
+    environment:
+      - WATCHFILES_FORCE_POLLING=true
+      - WATCHFILES_POLL_DELAY_MS=300
+    command: serve -a 0.0.0.0:8000 --livereload -w docs -w mkdocs.yml
     restart: unless-stopped
