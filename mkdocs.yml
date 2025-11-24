@@ -22,7 +22,7 @@ extra_css:
   - https://fonts.googleapis.com/css2?family=Special+Elite&display=swap
 
 # Helps paths resolve correctly behind code-server's /proxy/8002/
-use_directory_urls: false
+use_directory_urls: true
 
 
 # Extensions that need no extra installs (safe defaults)
