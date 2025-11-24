@@ -1,9 +1,9 @@
 services:
   mkdocs:
     image: squidfunk/mkdocs-material:9.5.31
-    container_name: mkdocs-homelab
+    container_name: mkdocs-homelab-dev
     ports:
-      - "8002:8000"
+      - "8181:8000"
     volumes:
       - /home/osirisortiz/projects/homelab-docs:/docs
     environment:
