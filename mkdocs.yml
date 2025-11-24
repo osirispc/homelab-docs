@@ -4,7 +4,7 @@ site_url: https://osirispc.github.io/homelab-docs/
 
 # Material theme + Jinja overrides (for bullet-proof CSS include)
 theme:
-  name: material
+  name: mkdocs
   font: false
   #custom_dir: overrides
   features:
@@ -36,8 +36,10 @@ markdown_extensions:
   - tables
 
 # Clean, case-file style navigation
+# Clean, case-file style navigation
 nav:
   - Homelab Docs: index.md
+
   - 📁 Case File Index:
       - Case File Index: casefile/index.md
       - Red Room Notes: redroom/notes.md
@@ -45,7 +47,7 @@ nav:
       - Owl Sightings: casefile/owl-sightings.md
       - Agent Briefings: casefile/briefings.md
 
-  -  - 📁 Infrastructure:
+  - 📁 Infrastructure:
       - Infrastructure Index: infra/index.md
       - Overview: infra/overview.md
       - MkDocs Docker Instant Reload Fix: infra/mkdocs-docker-instant-reload.md
@@ -74,10 +76,8 @@ nav:
       - Failover Cascade Model: ops/cascade.md
       - Jellyfin Infrastructure: ops/jellyfin.md
 
-
   - 📁 Guides:
       - MkDocs Dev Setup: guides/mkdocs-dev.md
       - Proxmox Tips: guides/proxmox-tips.md
       - VM Setup Guides: guides/vm-setup.md
       - Docker Notes: guides/docker.md
-

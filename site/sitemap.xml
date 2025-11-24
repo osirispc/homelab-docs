@@ -2,54 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://osirispc.github.io/homelab-docs/</loc>
-         <lastmod>2025-11-23</lastmod>
+         <lastmod>2025-11-24</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://osirispc.github.io/homelab-docs/cloudflare/cloudflare-tunnel-code-server/</loc>
-         <lastmod>2025-11-23</lastmod>
+         <lastmod>2025-11-24</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://osirispc.github.io/homelab-docs/extra/briefings/</loc>
-         <lastmod>2025-11-23</lastmod>
+         <lastmod>2025-11-24</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://osirispc.github.io/homelab-docs/extra/owls/</loc>
-         <lastmod>2025-11-23</lastmod>
+         <lastmod>2025-11-24</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://osirispc.github.io/homelab-docs/extra/red-room/</loc>
-         <lastmod>2025-11-23</lastmod>
+         <lastmod>2025-11-24</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://osirispc.github.io/homelab-docs/guides/mkdocs-dev-setup/</loc>
-         <lastmod>2025-11-23</lastmod>
+         <lastmod>2025-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://osirispc.github.io/homelab-docs/infra/</loc>
+         <lastmod>2025-11-24</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://osirispc.github.io/homelab-docs/infra/dns-pihole-unbound/</loc>
-         <lastmod>2025-11-23</lastmod>
+         <lastmod>2025-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://osirispc.github.io/homelab-docs/infra/mkdocs-docker-instant-reload/</loc>
+         <lastmod>2025-11-24</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://osirispc.github.io/homelab-docs/infra/network-baseline/</loc>
-         <lastmod>2025-11-23</lastmod>
+         <lastmod>2025-11-24</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://osirispc.github.io/homelab-docs/infra/network-diagram/</loc>
-         <lastmod>2025-11-23</lastmod>
+         <lastmod>2025-11-24</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://osirispc.github.io/homelab-docs/infra/overview/</loc>
-         <lastmod>2025-11-23</lastmod>
+         <lastmod>2025-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://osirispc.github.io/homelab-docs/lodges/</loc>
+         <lastmod>2025-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://osirispc.github.io/homelab-docs/ops/</loc>
+         <lastmod>2025-11-24</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://osirispc.github.io/homelab-docs/servers/packard-sawmill/</loc>
-         <lastmod>2025-11-23</lastmod>
+         <lastmod>2025-11-24</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://osirispc.github.io/homelab-docs/servers/theblacklodge/</loc>
-         <lastmod>2025-11-23</lastmod>
+         <lastmod>2025-11-24</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://osirispc.github.io/homelab-docs/servers/thewhitelodge/</loc>
-         <lastmod>2025-11-23</lastmod>
+         <lastmod>2025-11-24</lastmod>
+         <changefreq>daily</changefreq>
     </url>
 </urlset>

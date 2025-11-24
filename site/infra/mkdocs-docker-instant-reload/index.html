@@ -10,19 +10,25 @@
       
       
       
+        <link rel="canonical" href="https://osirispc.github.io/homelab-docs/infra/mkdocs-docker-instant-reload/">
       
       
+        <link rel="prev" href="../overview/">
       
-      <link rel="icon" href="/homelab-docs/assets/images/favicon.png">
+      
+        <link rel="next" href="../network-diagram/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
     
     
       
-        <title>Homelab Docs</title>
+        <title>MkDocs Docker Instant Reload Fix - Homelab Docs</title>
       
     
     
-      <link rel="stylesheet" href="/homelab-docs/assets/stylesheets/main.3cba04c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
       
       
 
@@ -35,7 +41,7 @@
       
     
     
-    <script>__md_scope=new URL("/homelab-docs/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -53,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#step-1-create-the-new-doc-page" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -65,7 +76,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/homelab-docs/." title="Homelab Docs" class="md-header__button md-logo" aria-label="Homelab Docs" data-md-component="logo">
+    <a href="../.." title="Homelab Docs" class="md-header__button md-logo" aria-label="Homelab Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -85,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              MkDocs Docker Instant Reload Fix
             
           </span>
         </div>
@@ -125,7 +136,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/homelab-docs/." title="Homelab Docs" class="md-nav__button md-logo" aria-label="Homelab Docs" data-md-component="logo">
+    <a href="../.." title="Homelab Docs" class="md-nav__button md-logo" aria-label="Homelab Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -143,7 +154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -205,7 +216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/casefile/index.md" class="md-nav__link">
+      <a href="../../casefile/index.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -226,7 +237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/redroom/notes.md" class="md-nav__link">
+      <a href="../../redroom/notes.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -247,7 +258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/casefile/addendums.md" class="md-nav__link">
+      <a href="../../casefile/addendums.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -268,7 +279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/casefile/owl-sightings.md" class="md-nav__link">
+      <a href="../../casefile/owl-sightings.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -289,7 +300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/casefile/briefings.md" class="md-nav__link">
+      <a href="../../casefile/briefings.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -314,8 +325,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -325,13 +338,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -345,7 +356,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             📁 Infrastructure
@@ -359,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/infra/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -380,7 +391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/infra/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -398,10 +409,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/homelab-docs/infra/mkdocs-docker-instant-reload/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    MkDocs Docker Instant Reload Fix
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -410,6 +439,84 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-create-the-new-doc-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1) Create the new doc page
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 1) Create the new doc page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-each-line-is-doing" class="md-nav__link">
+    <span class="md-ellipsis">
+      What each line is doing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-verify-its-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Verify It's Working
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference-snippet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Reference Snippet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-confirm-it-shows-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3) Confirm it shows up
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -422,7 +529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/infra/network-diagram/" class="md-nav__link">
+      <a href="../network-diagram/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -443,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/infra/network-baseline/" class="md-nav__link">
+      <a href="../network-baseline/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -464,7 +571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/infra/dns-pihole-unbound/" class="md-nav__link">
+      <a href="../dns-pihole-unbound/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -485,7 +592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/infra/storage.md" class="md-nav__link">
+      <a href="../storage.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -506,7 +613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/infra/zfs.md" class="md-nav__link">
+      <a href="../zfs.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -576,7 +683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/lodges/" class="md-nav__link">
+      <a href="../../lodges/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -597,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/lodges/packard-sawmill.md" class="md-nav__link">
+      <a href="../../lodges/packard-sawmill.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -618,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/lodges/white-lodge.md" class="md-nav__link">
+      <a href="../../lodges/white-lodge.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -639,7 +746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/lodges/black-lodge.md" class="md-nav__link">
+      <a href="../../lodges/black-lodge.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -660,7 +767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/lodges/owlcave.md" class="md-nav__link">
+      <a href="../../lodges/owlcave.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -681,7 +788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/lodges/bookhouse.md" class="md-nav__link">
+      <a href="../../lodges/bookhouse.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -702,7 +809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/lodges/gordon-cole.md" class="md-nav__link">
+      <a href="../../lodges/gordon-cole.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -723,7 +830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/lodges/rarr.md" class="md-nav__link">
+      <a href="../../lodges/rarr.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -793,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/ops/" class="md-nav__link">
+      <a href="../../ops/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -814,7 +921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/ops/cloudflare.md" class="md-nav__link">
+      <a href="../../ops/cloudflare.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -835,7 +942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/ops/codeserver.md" class="md-nav__link">
+      <a href="../../ops/codeserver.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -856,7 +963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/ops/vpn.md" class="md-nav__link">
+      <a href="../../ops/vpn.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -877,7 +984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/ops/automation.md" class="md-nav__link">
+      <a href="../../ops/automation.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -898,7 +1005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/ops/cascade.md" class="md-nav__link">
+      <a href="../../ops/cascade.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -919,7 +1026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/ops/jellyfin.md" class="md-nav__link">
+      <a href="../../ops/jellyfin.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -989,7 +1096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/guides/mkdocs-dev.md" class="md-nav__link">
+      <a href="../../guides/mkdocs-dev.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1010,7 +1117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/guides/proxmox-tips.md" class="md-nav__link">
+      <a href="../../guides/proxmox-tips.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1031,7 +1138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/guides/vm-setup.md" class="md-nav__link">
+      <a href="../../guides/vm-setup.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1052,7 +1159,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/homelab-docs/guides/docker.md" class="md-nav__link">
+      <a href="../../guides/docker.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1085,8 +1192,179 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  <h1>MkDocs Docker Instant Reload Fix</h1>
+
+<p>Alright. Let’s write it into your case file so Future-Osiris can pull it off the shelf and repeat it without a séance.</p>
+<p>Below is a ready-to-paste Markdown page <strong>plus</strong> the exact steps to place it and wire it into the sidebar.</p>
+<hr />
+<h2 id="step-1-create-the-new-doc-page">Step 1) Create the new doc page<a class="headerlink" href="#step-1-create-the-new-doc-page" title="Permanent link">&para;</a></h2>
+<p><strong>Machine:</strong> <code>pacard-sawmill</code>
+<strong>Path:</strong>
+<code>/home/osirisortiz/projects/homelab-docs/docs/infra/mkdocs-docker-instant-reload.md</code></p>
+<p>Run:</p>
+<pre><code class="language-bash">nano /home/osirisortiz/projects/homelab-docs/docs/infra/mkdocs-docker-instant-reload.md
+</code></pre>
+<p>Paste this whole page:</p>
+<pre><code class="language-markdown"># MkDocs in Docker: Instant Reload Fix (Polling Watcher)
+
+When MkDocs runs inside a Docker container, it may not detect file changes from the host.
+Symptoms look like this:
+
+- You edit a `.md` file on the host
+- Browser shows old content
+- **Only updates after you restart the container**
+
+This happens because Docker bind mounts sometimes **do not forward file-change events**
+(inotify/watchdog) into the container. So MkDocs never gets the “something changed” signal.
+
+The cure: **force polling** so MkDocs checks the filesystem on an interval.
+
+---
+
+## ✅ The Golden Fix
+
+Add polling env vars and an explicit serve command to your Docker Compose service.
+
+### Example `docker-compose.yml`
+
+```yml
+services:
+  mkdocs:
+    image: squidfunk/mkdocs-material:9.5.31
+    container_name: mkdocs-dev
+    ports:
+      - &quot;8181:8000&quot;
+    volumes:
+      - /FULL/PATH/TO/YOUR/REPO:/docs
+    environment:
+      - WATCHFILES_FORCE_POLLING=true
+      - WATCHFILES_POLL_DELAY_MS=300
+    command: serve -a 0.0.0.0:8000 --livereload -w docs -w mkdocs.yml
+    restart: unless-stopped
+</code></pre>
+<h3 id="what-each-line-is-doing">What each line is doing<a class="headerlink" href="#what-each-line-is-doing" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><code>WATCHFILES_FORCE_POLLING=true</code>
+  Forces MkDocs’ watcher to <strong>poll for changes</strong> instead of waiting for inotify events.</p>
+</li>
+<li>
+<p><code>WATCHFILES_POLL_DELAY_MS=300</code>
+  How often it checks for changes (300ms feels instant without burning CPU).</p>
+</li>
+<li>
+<p><code>command: serve ... --livereload -w docs -w mkdocs.yml</code>
+  Makes the container run the dev server with:</p>
+</li>
+<li>
+<p>livereload enabled</p>
+</li>
+<li>
+<p>explicit watch targets so it always rebuilds on edits.</p>
+</li>
+<li>
+<p><code>volumes: /repo:/docs</code>
+  Always mount the <strong>whole repo folder</strong>, not individual files.
+  Single-file mounts can “freeze” because editors swap temp files/inodes.</p>
+</li>
+</ul>
+<hr />
+<h2 id="how-to-verify-its-working">How to Verify It's Working<a class="headerlink" href="#how-to-verify-its-working" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Start the container:</li>
+</ol>
+<p><code>bash
+   docker compose up -d --force-recreate
+   docker logs -f mkdocs-dev</code></p>
+<ol>
+<li>You should see:</li>
+</ol>
+<p><code>Watching paths for changes: 'docs', 'mkdocs.yml'
+   Serving on http://0.0.0.0:8000/</code></p>
+<ol>
+<li>
+<p>Edit any markdown file under <code>docs/</code> and save.</p>
+</li>
+<li>
+<p>Logs should immediately show:</p>
+</li>
+</ol>
+<p><code>Building documentation...
+   Documentation built in ...</code></p>
+<p>If you see that without restarting the container, you're back on the good road.</p>
+<hr />
+<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>MkDocs will warn about <code>0.0.0.0</code> being “production-like.”
+  In Docker that’s normal — it allows port mapping to your host.</p>
+</li>
+<li>
+<p>If your repo lives on a network share (NFS/CIFS),
+  increase polling delay (ex: 500–1000ms).</p>
+</li>
+</ul>
+<hr />
+<h2 id="quick-reference-snippet">Quick Reference Snippet<a class="headerlink" href="#quick-reference-snippet" title="Permanent link">&para;</a></h2>
+<pre><code class="language-yml">environment:
+  - WATCHFILES_FORCE_POLLING=true
+  - WATCHFILES_POLL_DELAY_MS=300
+command: serve -a 0.0.0.0:8000 --livereload -w docs -w mkdocs.yml
+volumes:
+  - /FULL/PATH/TO/REPO:/docs
+</code></pre>
+<p>That’s the whole spell.</p>
+<pre><code>
+Save and exit:
+- **Ctrl+O**, Enter
+- **Ctrl+X**
+
+---
+
+## Step 2) Wire it into the sidebar (mkdocs.yml)
+
+**File:**  
+`/home/osirisortiz/projects/homelab-docs/mkdocs.yml`
+
+Open it:
+
+```bash
+nano /home/osirisortiz/projects/homelab-docs/mkdocs.yml
+</code></pre>
+<p>Find your <code>nav:</code> section. Add this entry wherever your Infra/docker docs live.</p>
+<p>Example:</p>
+<pre><code class="language-yml">nav:
+  - Home: index.md
+  - Infra:
+      - Overview: infra/index.md
+      - MkDocs Docker Instant Reload Fix: infra/mkdocs-docker-instant-reload.md
+</code></pre>
+<p>If you already have an Infra section with other pages, just drop the new line under it.</p>
+<p>Save + exit.</p>
+<hr />
+<h2 id="step-3-confirm-it-shows-up">Step 3) Confirm it shows up<a class="headerlink" href="#step-3-confirm-it-shows-up" title="Permanent link">&para;</a></h2>
+<p>If your homelab docs dev container is running on port <strong>8002</strong>, refresh:</p>
+<p><code>http://192.168.199.177:8002/</code></p>
+<p>You should see a new sidebar item:
+<strong>Infra → MkDocs Docker Instant Reload Fix</strong></p>
+<hr />
+<p>If you paste your current <code>nav:</code> block here, I’ll tell you the <em>exact</em> spot to insert the line so it matches your structure perfectly.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1120,12 +1398,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/homelab-docs/", "features": ["navigation.expand", "navigation.sections", "navigation.instant", "content.code.copy", "toc.integrate"], "search": "/homelab-docs/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.sections", "navigation.instant", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/homelab-docs/assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
-        <script src="/homelab-docs/search/main.js"></script>
+        <script src="../../search/main.js"></script>
       
     
   </body>
