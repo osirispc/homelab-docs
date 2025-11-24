@@ -1,6 +1,6 @@
 site_name: Homelab Docs
 site_description: Documentation for Osiris' homelab and Lodge infrastructure
-site_url: https://osirispc.github.io/homelab-docs/
+site_url: https://192.168.199.177:8002/homelab-docs/
 
 # Material theme + Jinja overrides (for bullet-proof CSS include)
 theme:
