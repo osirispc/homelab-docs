@@ -6,7 +6,7 @@ site_url: https://osirispc.github.io/homelab-docs/
 theme:
   name: material
   font: false
-  custom_dir: overrides
+  #custom_dir: overrides
   features:
     - navigation.expand
     - navigation.sections
@@ -15,11 +15,11 @@ theme:
     - toc.integrate
 
 # Keep CSS at top level (MkDocs ignores it if nested under theme)
-extra_css:
-  - assets/styles/custom.css
-  - assets/styles/casefile.css
-  - assets/styles/tabs.css
-  - https://fonts.googleapis.com/css2?family=Special+Elite&display=swap
+#extra_css:
+#  - assets/styles/custom.css
+#  - assets/styles/casefile.css
+#  - assets/styles/tabs.css
+#  - https://fonts.googleapis.com/css2?family=Special+Elite&display=swap
 
 # Helps paths resolve correctly behind code-server's /proxy/8002/
 use_directory_urls: true
