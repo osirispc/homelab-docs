@@ -5,7 +5,8 @@
   <a href="ops/" class="tab-link">OPS</a>
 </div>
 
-# 🗂️ OPERATION LODGE CASES 
+# 🗂️ OPERATION LODGE CASES
+
 <div class="casefile-stamp">FEDERAL CASE FILE</div>
 
 Welcome, Agent.
@@ -16,6 +17,7 @@ a classified technology hub maintained deep within the Cascades.
 ---
 
 ## 🔻 CASE NO. 199-XX-RED-RM
+
 This file contains technical intelligence, infrastructure layouts,  
 and field reports related to the Lodge digital network.
 
@@ -25,6 +27,7 @@ Proceed with caution. Some documents may appear…
 ---
 
 ## 🔧 Infrastructure
+
 - [Infrastructure Index](infra/)
 - [Infrastructure Overview](infra/overview/)
 - [Network Diagram](infra/network-diagram/)
@@ -37,6 +40,7 @@ Proceed with caution. Some documents may appear…
 ---
 
 ## 🏔 The Lodges
+
 - [Lodges Index](lodges/)
 - [Packard Sawmill](lodges/packard-sawmill/)
 - [The White Lodge](lodges/white-lodge/)
@@ -49,6 +53,7 @@ Proceed with caution. Some documents may appear…
 ---
 
 ## 📡 Operations
+
 - [Operations Index](ops/)
 - [VPN Stack](ops/vpn/)
 - [Cloudflare Operations](ops/cloudflare/)
@@ -60,6 +65,7 @@ Proceed with caution. Some documents may appear…
 ---
 
 ## 🔎 Additional Case Files
+
 - [Case File Index](casefile/)
 - [Classified Addendums](casefile/addendums/)
 - [Red Room Notes](redroom/notes/)
