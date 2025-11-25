@@ -15,14 +15,14 @@ theme:
     - toc.integrate
 
 # Keep CSS at top level (MkDocs ignores it if nested under theme)
-#extra_css:
-#  - assets/styles/custom.css
-#  - assets/styles/casefile.css
-#  - assets/styles/tabs.css
-#  - https://fonts.googleapis.com/css2?family=Special+Elite&display=swap
+extra_css:
+  - assets/styles/custom.css
+  - assets/styles/casefile.css
+  - assets/styles/tabs.css
+  - https://fonts.googleapis.com/css2?family=Special+Elite&display=swap
 
 # Helps paths resolve correctly behind code-server's /proxy/8002/
-use_directory_urls: true
+use_directory_urls: false
 
 
 # Extensions that need no extra installs (safe defaults)
@@ -36,48 +36,60 @@ markdown_extensions:
   - tables
 
 # Clean, case-file style navigation
-# Clean, case-file style navigation
 nav:
-  - Homelab Docs: index.md
+  - Case File Index: index.md
 
-  - 📁 Case File Index:
-      - Case File Index: casefile/index.md
-      - Red Room Notes: redroom/notes.md
-      - Classified Addendums: casefile/addendums.md
-      - Owl Sightings: casefile/owl-sightings.md
-      - Agent Briefings: casefile/briefings.md
-
-  - 📁 Infrastructure:
-      - Infrastructure Index: infra/index.md
+  - Infrastructure:
+      - Index: infra/index.md
       - Overview: infra/overview.md
-      - MkDocs Docker Instant Reload Fix: infra/mkdocs-docker-instant-reload.md
       - Network Diagram: infra/network-diagram.md
       - Network Baseline: infra/network-baseline.md
-      - DNS (Pi-hole + Unbound): infra/dns-pihole-unbound.md
-      - Storage & Backups: infra/storage.md
-      - ZFS & VM Mirrors: infra/zfs.md
+      - "DNS: Pi-hole + Unbound": infra/dns-pihole-unbound.md
+      - Storage: infra/storage.md
+      - ZFS: infra/zfs.md
+      - MkDocs Docker Instant Reload: infra/mkdocs-docker-instant-reload.md
 
-  - 📁 The Lodges:
-      - Lodges Index: lodges/index.md
-      - Packard Sawmill: lodges/packard-sawmill.md
-      - The White Lodge: lodges/white-lodge.md
-      - The Black Lodge: lodges/black-lodge.md
-      - The Owl Cave (NAS): lodges/owlcave.md
-      - The Bookhouse (Readarr VM): lodges/bookhouse.md
-      - Gordon Cole Server: lodges/gordon-cole.md
-      - RARR (Main Stack): lodges/rarr.md
+  - The Lodges:
+      - Overview: lodges/index.md
+      # Here is the "merge": use your existing server pages for these
+      - Packard Sawmill: servers/packard-sawmill.md
+      - The White Lodge: servers/thewhitelodge.md
+      - The Black Lodge: servers/theblacklodge.md
+      - Owl Cave: lodges/owlcave.md
+      - Bookhouse: lodges/bookhouse.md
+      - Gordon Cole: lodges/gordon-cole.md
+      - RARR: lodges/rarr.md
 
-  - 📁 Operations:
-      - Operations Index: ops/index.md
-      - Cloudflare Operations: ops/cloudflare.md
-      - Code-Server Tunnel: ops/codeserver.md
-      - VPN Stack: ops/vpn.md
+  - Ops:
+      - Overview: ops/index.md
+      - VPN: ops/vpn.md
+      - Cloudflare: ops/cloudflare.md
+      - Code-Server: ops/codeserver.md
       - Automation: ops/automation.md
-      - Failover Cascade Model: ops/cascade.md
-      - Jellyfin Infrastructure: ops/jellyfin.md
+      - Cascade: ops/cascade.md
+      - Jellyfin: ops/jellyfin.md
 
-  - 📁 Guides:
-      - MkDocs Dev Setup: guides/mkdocs-dev.md
+  - Guides:
+      - MkDocs Dev Setup: guides/mkdocs-dev-setup.md
+      - MkDocs Dev Workflow: guides/mkdocs-dev.md
       - Proxmox Tips: guides/proxmox-tips.md
-      - VM Setup Guides: guides/vm-setup.md
-      - Docker Notes: guides/docker.md
+      - VM Setup: guides/vm-setup.md
+      - Docker Basics: guides/docker.md
+
+  - Case Files:
+      - Case File Index: casefile/index.md
+      - Briefings: casefile/briefings.md
+      - Owl Sightings: casefile/owl-sightings.md
+      - Addendums: casefile/addendums.md
+
+  - Red Room:
+      - Notes: redroom/notes.md
+
+  - Extra:
+      - Briefings: extra/briefings.md
+      - Owl Lore: extra/owls.md
+      - Red Room Fragment: extra/red-room.md
+
+  - Cloudflare:
+      - Tunnel for Code-Server: cloudflare/cloudflare-tunnel-code-server.md
+
