@@ -1,28 +1,45 @@
 # Infrastructure Overview
 
-This section documents the core foundation of the homelab — the systems that support all servers, services, workloads, and automation. These components form the underlying platform on which everything else runs.
+The infrastructure layer forms the foundation of the homelab. It includes the network, DNS, storage, virtualization stack, and all underlying systems that support servers, services, and automation. This section documents how the environment is structured, how core components operate, and what must be restored first when issues arise.
 
-The infrastructure layer includes:
+---
 
-- Physical and virtual networking
-- DNS and name resolution
-- Storage architecture and file systems
-- ZFS datasets, snapshots, and replication
-- Proxmox hypervisors and virtualization
-- Any supporting tools used to maintain or monitor the environment
+## Purpose of This Section
 
-Each subsection of this area goes deeper into the technical details behind how the homelab is designed and how it operates.
+This section exists to answer questions such as:
+
+- **How is the homelab physically and logically structured?**
+- **Where do DNS, routing, and VLANs live?**
+- **How is storage arranged and protected?**
+- **What does the high-level network look like?**
+- **What components are foundational for recovery or troubleshooting?**
+
+It provides the technical backbone for the entire environment — a clear reference for configuration, troubleshooting, and future expansion.
+
+---
+
+## What the Infrastructure Covers
+
+Infrastructure includes:
+
+- Physical and virtual networks  
+- DNS and name resolution  
+- Storage systems and ZFS  
+- Proxmox hypervisors and virtualization  
+- Supporting operational tools  
+
+Each subsection goes deeper into the technical design of the homelab.
 
 ---
 
 ## Network
 
-The network forms the spine of the environment. It determines how devices communicate, how traffic flows, and how security boundaries are enforced.
+The network defines how devices communicate and how traffic is secured.
 
-Covered in detail:
+Documented here:
 
-- **Network Diagram** – Logical layout of switches, routers, VLANs, and links  
-- **Network Baseline** – IP schema, routing behavior, firewall considerations  
+- **Network Diagram** – Logical layout of routers, switches, and VLANs  
+- **Network Baseline** – IP schema, routing, firewall concepts  
 
 ➡️ See the **Network** subsection for details.
 
@@ -30,14 +47,14 @@ Covered in detail:
 
 ## DNS
 
-Reliable name resolution is critical for access, automation, certificate validation, and internal service discovery.
+Reliable name resolution supports internal services, certificates, and automation.
 
-Documented here:
+This section covers:
 
-- **Pi-hole + Unbound recursive DNS**
-- DNS filtering policy
-- Local domain handling
-- Upstream resolvers
+- Pi-hole + Unbound  
+- DNS filtering  
+- Local domain handling  
+- Upstream resolver behavior  
 
 ➡️ See **DNS** for configuration and troubleshooting.
 
@@ -45,63 +62,46 @@ Documented here:
 
 ## Storage
 
-Storage provides the foundation for media, VMs, backups, and shared data.
+Storage underpins media, VMs, backups, and persistent data.
 
 Topics include:
 
-- Storage layout and datasets  
+- Dataset layout  
 - Media directories  
-- NFS/SMB (if used)  
+- NFS/SMB (if applicable)  
 - Integration with Proxmox  
 
-➡️ See **Storage** for the full breakdown.
+➡️ See **Storage** for full details.
 
 ---
 
 ## ZFS
 
-ZFS is used for reliability, integrity, and snapshot-based recovery.
+ZFS provides data integrity, checksumming, snapshots, and replication.
 
-This section covers:
+Covered here:
 
 - Pool layout  
 - Dataset structure  
-- Scrubs and maintenance  
-- Snapshots  
-- Replication between nodes  
+- Scrub scheduling  
+- Snapshot strategy  
+- Replication strategies  
 
-➡️ See **ZFS** for commands, schedules, and operational notes.
+➡️ See **ZFS** for operational details.
 
 ---
 
 ## Virtualization Layer
 
-The Proxmox hypervisor stack runs most of the homelab workloads.
+The Proxmox hypervisors host the majority of the homelab workloads.
 
-Recommended content for this section:
+This section will cover:
 
 - Node responsibilities  
 - VM layout  
 - Container layout  
-- Backup strategy (Proxmox Backup Server or other)  
-- Live migration or failover considerations  
-
-*(Note: This section may be expanded into its own page later.)*
-
----
-
-## Purpose of This Section
-
-Infrastructure exists to answer questions like:
-
-- “How is the homelab physically and logically structured?”  
-- “Where does DNS live, and how is it configured?”  
-- “How is storage arranged, protected, and backed up?”  
-- “What does the network look like at a high level?”  
-- “What components must be restored first in a disaster?”  
-
-This is the deepest layer of the homelab and the most important for stability.  
-Changes here should be made intentionally and documented immediately.
+- Backup/restore workflows  
+- Migration or failover considerations  
 
 ---
 
