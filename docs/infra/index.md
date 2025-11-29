@@ -11,4 +11,3 @@ Here you’ll find the baseline maps, DNS field notes, storage strategy, and rep
 - [DNS (Pi-hole + Unbound)](dns-pihole-unbound/)
 - [Storage & Backups](storage/)
 - [ZFS & VM Mirrors](zfs/)
-- [MkDocs Docker Instant Reload Fix](mkdocs-docker-instant-reload/)
