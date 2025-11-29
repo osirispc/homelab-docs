@@ -39,53 +39,64 @@ markdown_extensions:
 # -----------------------------
 plugins:
   - search
-  - autoreload
 
 # -----------------------------
 # NAVIGATION
 # -----------------------------
 nav:
   - Home: index.md
-
   - Project Dashboard: project-dashboard.md
 
   - Infrastructure:
       - Overview: infra/overview.md
       - Network Diagram: infra/network-diagram.md
       - Network Baseline: infra/network-baseline.md
-      - "DNS: Pi-hole + Unbound": infra/dns-pihole-unbound.md
+      - DNS: infra/dns-pihole-unbound.md
       - Storage: infra/storage.md
       - ZFS: infra/zfs.md
-      - MkDocs Docker Instant Reload: infra/mkdocs-instant-reload.md
+      - Docker Instant Reload: infra/mkdocs-docker-instant-reload.md
 
-  - Servers:
-      - Overview: servers/overview.md
-      - Pacard Sawmill: servers/pacard-sawmill.md
-      - Gordon Cole: servers/gordon-cole.md
-      - Bookhouse: servers/bookhouse.md
-      - The White Lodge: servers/the-white-lodge.md
-      - The Black Lodge: servers/the-black-lodge.md
-      - Owl Cave: servers/owl-cave.md
-      - RARR: servers/rarr.md
+  - Lodges / Servers:
+      - Packard Sawmill: servers/packard-sawmill.md
+      - The Black Lodge: servers/theblacklodge.md
+      - The White Lodge: servers/thewhitelodge.md
+
+  - Cloudflare:
+      - Tunnel for Code-Server: cloudflare/cloudflare-tunnel-code-server.md
+      - Zero Trust Setup: cloudflare/cloudflare-zero-trust-setup.md
 
   - Operations:
-      - Jellyfin Failover: ops/jellyfin-failover.md
-      - Backup Strategy: ops/backup-strategy.md
-      - Rsync Mirroring: ops/rsync-mirror.md
-      - ZFS Replication: ops/zfs-replication.md
+      - Automation: ops/automation.md
+      - Cascade: ops/cascade.md
+      - Cloudflare Ops: ops/cloudflare.md
+      - Code-Server Ops: ops/codeserver.md
+      - Jellyfin Operations: ops/jellyfin.md
+      - VPN Operations: ops/vpn.md
 
   - Guides:
-      - MkDocs Workflow: guides/mkdocs-workflow.md
-      - Cloudflare Zero Trust: guides/cloudflare-zero-trust.md
-      - Verizon Hotspot Activation: guides/verizon-hotspot.md
-      - NinjaOne Remote Setup: guides/ninjaone-remote.md
+      - Docker Guide: guides/docker.md
+      - MkDocs Dev Setup: guides/mkdocs-dev-setup.md
+      - MkDocs Dev: guides/mkdocs-dev.md
+      - Proxmox Tips: guides/proxmox-tips.md
+      - VM Setup: guides/vm-setup.md
 
   - Case Files:
-      - Case File Index: casefiles/index.md
-      - Operation Lodge Cascades: casefiles/operation-lodge-cascades.md
+      - Case File Index: casefile/index.md
+      - Addendums: casefile/addendums.md
+      - Briefings: casefile/briefings.md
+      - Owl Sightings: casefile/owl-sightings.md
 
-# -----------------------------
-# EXTRA (reserved for future styling)
-# -----------------------------
-extra_css: []
-extra_javascript: []
+  - Extra:
+      - Briefings: extra/briefings.md
+      - Owls: extra/owls.md
+      - Red Room Notes: extra/red-room.md
+
+  - Red Room:
+      - Notes: redroom/notes.md
+
+  - Lodges Detail Pages:
+      - Bookhouse: lodges/bookhouse.md
+      - Gordon Cole: lodges/gordon-cole.md
+      - Owl Cave: lodges/owlcave.md
+      - RARR: lodges/rarr.md
+
