@@ -87,8 +87,10 @@ nav:
       - Docker Setup: guides/docker.md
       - MkDocs Development Setup: guides/mkdocs-dev-setup.md
       - MkDocs Development Guide: guides/mkdocs-dev.md
+      - MkDocs Instant Reload: guides/mkdocs-docker-instant-reload.md
       - Proxmox Tips: guides/proxmox-tips.md
       - VM Setup Guide: guides/vm-setup.md
+      
 
   - Case Files:
       - Casefile Index: casefile/index.md
