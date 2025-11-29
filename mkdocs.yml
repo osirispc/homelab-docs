@@ -1,96 +1,91 @@
 site_name: Homelab Docs
-site_description: Documentation for Osiris' homelab and Lodge infrastructure
-site_url: https://192.168.199.177:8002/homelab-docs/
+site_description: Documentation for Osiris' Homelab and Lodge Infrastructure
+site_url: https://docs.osirispc.com/
 
-# Material theme + Jinja overrides (for bullet-proof CSS include)
+# -----------------------------
+# THEME — CLEAN BASELINE
+# -----------------------------
 theme:
-  name: mkdocs
-  font: false
-  #custom_dir: overrides
+  name: material
+  palette:
+    scheme: default
   features:
     - navigation.expand
     - navigation.sections
-    - navigation.instant
-    - content.code.copy
     - toc.integrate
+    - content.code.copy
 
-# Keep CSS at top level (MkDocs ignores it if nested under theme)
-extra_css:
-  - assets/styles/custom.css
-  - assets/styles/casefile.css
-  - assets/styles/tabs.css
-  - https://fonts.googleapis.com/css2?family=Special+Elite&display=swap
-
-# Helps paths resolve correctly behind code-server's /proxy/8002/
-use_directory_urls: false
-
-
-# Extensions that need no extra installs (safe defaults)
+# -----------------------------
+# MARKDOWN EXTENSIONS
+# -----------------------------
 markdown_extensions:
   - admonition
+  - codehilite
+  - footnotes
+  - tables
   - toc:
       permalink: true
-  - footnotes
   - attr_list
-  - md_in_html
-  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true
 
-# Clean, case-file style navigation
+# -----------------------------
+# PLUGINS
+# -----------------------------
+plugins:
+  - search
+  - autoreload
+
+# -----------------------------
+# NAVIGATION
+# -----------------------------
 nav:
+  - Home: index.md
+
   - Project Dashboard: project-dashboard.md
-  - Case File Index: index.md
 
   - Infrastructure:
-      - Index: infra/index.md
       - Overview: infra/overview.md
       - Network Diagram: infra/network-diagram.md
       - Network Baseline: infra/network-baseline.md
       - "DNS: Pi-hole + Unbound": infra/dns-pihole-unbound.md
       - Storage: infra/storage.md
       - ZFS: infra/zfs.md
-      - MkDocs Docker Instant Reload: infra/mkdocs-docker-instant-reload.md
+      - MkDocs Docker Instant Reload: infra/mkdocs-instant-reload.md
 
-  - The Lodges:
-      - Overview: lodges/index.md
-      # Here is the "merge": use your existing server pages for these
-      - Packard Sawmill: servers/packard-sawmill.md
-      - The White Lodge: servers/thewhitelodge.md
-      - The Black Lodge: servers/theblacklodge.md
-      - Owl Cave: lodges/owlcave.md
-      - Bookhouse: lodges/bookhouse.md
-      - Gordon Cole: lodges/gordon-cole.md
-      - RARR: lodges/rarr.md
+  - Servers:
+      - Overview: servers/overview.md
+      - Pacard Sawmill: servers/pacard-sawmill.md
+      - Gordon Cole: servers/gordon-cole.md
+      - Bookhouse: servers/bookhouse.md
+      - The White Lodge: servers/the-white-lodge.md
+      - The Black Lodge: servers/the-black-lodge.md
+      - Owl Cave: servers/owl-cave.md
+      - RARR: servers/rarr.md
 
-  - Ops:
-      - Overview: ops/index.md
-      - VPN: ops/vpn.md
-      - Cloudflare: ops/cloudflare.md
-      - Code-Server: ops/codeserver.md
-      - Automation: ops/automation.md
-      - Cascade: ops/cascade.md
-      - Jellyfin: ops/jellyfin.md
+  - Operations:
+      - Jellyfin Failover: ops/jellyfin-failover.md
+      - Backup Strategy: ops/backup-strategy.md
+      - Rsync Mirroring: ops/rsync-mirror.md
+      - ZFS Replication: ops/zfs-replication.md
 
   - Guides:
-      - MkDocs Dev Setup: guides/mkdocs-dev-setup.md
-      - MkDocs Dev Workflow: guides/mkdocs-dev.md
-      - Proxmox Tips: guides/proxmox-tips.md
-      - VM Setup: guides/vm-setup.md
-      - Docker Basics: guides/docker.md
+      - MkDocs Workflow: guides/mkdocs-workflow.md
+      - Cloudflare Zero Trust: guides/cloudflare-zero-trust.md
+      - Verizon Hotspot Activation: guides/verizon-hotspot.md
+      - NinjaOne Remote Setup: guides/ninjaone-remote.md
 
   - Case Files:
-      - Case File Index: casefile/index.md
-      - Briefings: casefile/briefings.md
-      - Owl Sightings: casefile/owl-sightings.md
-      - Addendums: casefile/addendums.md
+      - Case File Index: casefiles/index.md
+      - Operation Lodge Cascades: casefiles/operation-lodge-cascades.md
 
-  - Red Room:
-      - Notes: redroom/notes.md
-
-  - Extra:
-      - Briefings: extra/briefings.md
-      - Owl Lore: extra/owls.md
-      - Red Room Fragment: extra/red-room.md
-
-  - Cloudflare:
-      - Tunnel for Code-Server: cloudflare/cloudflare-tunnel-code-server.md
-      - Zero Trust Setup: cloudflare/cloudflare-zero-trust-setup.md
+# -----------------------------
+# EXTRA (reserved for future styling)
+# -----------------------------
+extra_css: []
+extra_javascript: []
