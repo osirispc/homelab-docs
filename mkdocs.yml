@@ -93,4 +93,4 @@ nav:
 
   - Cloudflare:
       - Tunnel for Code-Server: cloudflare/cloudflare-tunnel-code-server.md
-
+      - Zero Trust Setup: cloudflare/cloudflare-zero-trust-setup.md
