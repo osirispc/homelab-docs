@@ -44,37 +44,60 @@ plugins:
 # NAVIGATION
 # -----------------------------
 nav:
-  - Overview: index.md
+  - Overview:
+      - Home: index.md
+      - Project Dashboard: project-dashboard.md
 
   - Infrastructure:
-      - Network
-      - DNS
-      - Storage
-      - Backups
-      - Hypervisors
+      - Overview: infra/overview.md
+      - Network:
+          - Network Diagram: infra/network-diagram.md
+          - Network Baseline: infra/network-baseline.md
+      - DNS: infra/dns-pihole-unbound.md
+      - Storage:
+          - Storage Overview: infra/storage.md
+          - ZFS: infra/zfs.md
+      - Development Tools:
+          - MkDocs Live Reload: infra/mkdocs-docker-instant-reload.md
 
   - Servers:
-      - Server List
-      - Proxmox Nodes
-      - VMs
-      - Containers
+      - Packard Sawmill: servers/packard-sawmill.md
+      - The Black Lodge: servers/theblacklodge.md
+      - The White Lodge: servers/thewhitelodge.md
+      - Bookhouse: lodges/bookhouse.md
+      - Gordon Cole: lodges/gordon-cole.md
+      - Owl Cave: lodges/owlcave.md
+      - RARR VM: lodges/rarr.md
 
   - Services:
-      - Media Services
-      - Access (VPN / Cloudflare)
-      - Automation
-      - Development Tools
+      - Cloudflare:
+          - Tunnel for Code-Server: cloudflare/cloudflare-tunnel-code-server.md
+          - Zero Trust Setup: cloudflare/cloudflare-zero-trust-setup.md
+          - Cloudflare Operations Notes: ops/cloudflare.md
+      - Media Services:
+          - Jellyfin Operations: ops/jellyfin.md
+      - Access Services:
+          - VPN Operations: ops/vpn.md
+      - Internal Tools:
+          - Code-Server Operations: ops/codeserver.md
+          - Automation Services: ops/automation.md
+          - Cascade Failover: ops/cascade.md
 
   - Guides:
-      - Setup Guides
-      - Troubleshooting
-      - Procedures
+      - Docker Setup: guides/docker.md
+      - MkDocs Development Setup: guides/mkdocs-dev-setup.md
+      - MkDocs Development Guide: guides/mkdocs-dev.md
+      - Proxmox Tips: guides/proxmox-tips.md
+      - VM Setup Guide: guides/vm-setup.md
 
-  - Operations:
-      - Monitoring
-      - Failover
-      - Maintenance Tasks
+  - Case Files:
+      - Casefile Index: casefile/index.md
+      - Addendums: casefile/addendums.md
+      - Briefings: casefile/briefings.md
+      - Owl Sightings: casefile/owl-sightings.md
 
   - Reference:
-      - Notes
-      - Experiments
+      - Extra Briefings (Archive): extra/briefings.md
+      - Extra Owls (Archive): extra/owls.md
+      - Extra Red Room Notes: extra/red-room.md
+      - Red Room Notes: redroom/notes.md
