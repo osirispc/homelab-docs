@@ -1,3 +1,13 @@
+---
+title: Cloudflare Zero Trust Setup
+summary: Full guide for DNS migration, tunnels, Zero Trust Access, and secure homelab publishing.
+tags:
+  - cloudflare
+  - zero-trust
+  - tunnels
+  - homelab-security
+---
+
 # Cloudflare Zero Trust + Tunnel Setup Guide
 _A complete step-by-step reference for securing homelab services behind Cloudflare._
 
@@ -68,10 +78,10 @@ Follow the initial setup prompts.
 ## Step 1 — Configure identity providers
 Common choices:
 
-- Google
-- GitHub
-- One-time PIN
-- Azure AD
+- Google  
+- GitHub  
+- One-time PIN  
+- Azure AD  
 
 Enable whichever your organization uses.
 
@@ -172,138 +182,3 @@ docs.osirispc.com
 ```
 http://192.168.199.177:8282
 ```
-
-### Example — Code Server
-**Hostname:**
-```
-code.osirispc.com
-```
-
-**Service:**
-```
-http://192.168.199.177:8002
-```
-
-Cloudflare automatically creates DNS CNAMEs like:
-```
-docs.osirispc.com → <tunnel-id>.cfargotunnel.com
-```
-
----
-
-# 5️⃣ Protect Applications With Cloudflare Access
-
-Cloudflare Dashboard →  
-Zero Trust →  
-**Access → Applications → Add Application**
-
-Select **Self-hosted**.
-
----
-
-## Example — Protect docs.osirispc.com
-
-**Application Name:**
-```
-docs
-```
-
-**Application Domain:**
-```
-docs.osirispc.com/*
-```
-
-**Policy:**
-Allow → Email:
-```
-osirisortizpc@gmail.com
-```
-
----
-
-## Example — Protect code.osirispc.com
-
-**Application Domain:**
-```
-code.osirispc.com/*
-```
-
-**Policy:**
-Allow → Email:
-```
-osirisortizpc@gmail.com
-```
-
----
-
-# 6️⃣ Testing Cloudflare Zero Trust
-
-## Test 1 — Visit your protected service
-```
-https://docs.osirispc.com
-```
-
-You should see the Cloudflare Access login.
-
----
-
-## Test 2 — Identity diagnostic
-Visit:
-```
-https://whoami.cloudflareaccess.com
-```
-
-Expected output includes:
-```
-isAccessGranted: true
-email: your_email
-```
-
----
-
-## Test 3 — Check DNS resolution
-Run:
-```bash
-dig docs.osirispc.com
-```
-
-You should see:
-```
-docs.osirispc.com.  CNAME  <tunnel-id>.cfargotunnel.com.
-```
-
----
-
-# 7️⃣ Troubleshooting
-
-## ❌ If you get the “Welcome — no apps assigned” screen:
-Cloudflare is authenticating you **but can’t match the hostname to an Access App**.
-
-Fix:
-
-1. Application Domain must be:
-   ```
-   docs.osirispc.com/*
-   ```
-2. Public Hostname must exist in the tunnel  
-3. DNS CNAME must exist  
-4. Policy must include your email
-
----
-
-# 🎉 Final Notes
-
-This page uses MkDocs Material features:
-
-Enable code copy buttons with:
-```yaml
-theme:
-  features:
-    - content.code.copy
-```
-
-When developing documentation, fenced code blocks create automatic copy icons and styling.
-
----
-
-# ✔ End of Guide
