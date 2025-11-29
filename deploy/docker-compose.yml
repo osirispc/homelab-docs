@@ -5,9 +5,10 @@ services:
     ports:
       - "8002:8000"
     volumes:
-      - /home/osirisortiz/projects/homelab-docs:/docs
+      - ../:/docs
     environment:
       - WATCHFILES_FORCE_POLLING=true
       - WATCHFILES_POLL_DELAY_MS=300
-    command: serve -a 0.0.0.0:8000 --livereload -w docs -w mkdocs.yml
+    command: mkdocs serve -a 0.0.0.0:8000 --livereload -w docs -w mkdocs.yml
     restart: unless-stopped
+
