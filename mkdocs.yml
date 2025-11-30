@@ -91,6 +91,7 @@ nav:
       - MkDocs Instant Reload: guides/mkdocs-docker-instant-reload.md
       - Proxmox Tips: guides/proxmox-tips.md
       - VM Setup Guide: guides/vm-setup.md
+      - Cleanup Downloads: guides/cleanup-downloads.md
       
 
   - Case Files:
