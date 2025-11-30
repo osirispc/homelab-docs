@@ -37,6 +37,7 @@ Everything **except** `incomplete/` is eligible for cleanup once it's older than
 # cleanup-downloads.sh
 # Automatically clean up completed RARR downloads older than X days.
 
+
 DOWNLOADS_DIR="/mnt/data/downloads"
 INCOMPLETE_NAME="incomplete"
 LOGFILE="/var/log/cleanup-downloads.log"
@@ -53,11 +54,14 @@ find "$DOWNLOADS_DIR" \
   -print -exec rm -rf {} \; >> "$LOGFILE" 2>&1
 
 echo "Cleanup complete." >> "$LOGFILE"
+```
 
 🔐 Set Permissions
 
-sudo chmod +x /usr/local/bin/cleanup-downloads.sh
+```
 
+sudo chmod +x /usr/local/bin/cleanup-downloads.sh
+```
 
 ---
 
