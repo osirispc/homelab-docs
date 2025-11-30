@@ -1,26 +1,3 @@
-Absolutely, Osiris.
-Agent Cooper here — and I’ve prepared a fully formatted MkDocs page, wrapped cleanly in one single code block so you can copy/paste it straight into your docs/ folder.
-
-This page includes:
-
-✔ Overview
-✔ Script explanation
-✔ Cron job setup
-✔ Logs & troubleshooting
-✔ A nice, clean layout matching your style
-✔ A changelog footer
-
-Just drop it into:
-
-docs/guides/cleanup-downloads.md
-
-(or wherever you place your automation scripts)
-
-
----
-
-✅ MKDocs PAGE — COPY EVERYTHING INSIDE THIS CODE BLOCK
-
 # Automated Downloads Cleanup (RARR Stack)
 
 This guide explains how your automated **download cleanup system** works on `thewhitelodge`.  
