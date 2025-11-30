@@ -1,263 +1,116 @@
-Absolutely, Agent.
-Here is your single, clean, ready-to-paste MkDocs .md page that documents the entire creation of your Twin Peaks VS Code Theme + Icon Pack + VSIX packaging + GitHub upload.
+# Twin Peaks VS Code Theme & Icon Pack (VSIX)
 
-You asked for Option B → meaning:
+## Overview
+This guide documents the full process of creating, packaging, and publishing the **Twin Peaks VS Code Theme Pack**, including the Red Room color theme, Lodge Icon Pack, and a VSIX installer so it can be used across machines or shared publicly.
 
-✔️ Full documentation in one file
-✔️ Clean MkDocs-ready markdown
-✔️ With copyable code blocks
-✔️ With a changelog footer
-✔️ With the proper nav entry you can paste into mkdocs.yml
-
-This file is professional, complete, and written like a Twin Peaks case file.
-
+This extension includes:
+- **Twin Peaks: Red Room** (dark editor theme)
+- **Lodge Icon Pack** (custom VS Code file/folder icons)
+- **Complete VSIX package**
+- **GitHub repository setup**
+- **Optional marketplace publishing**
 
 ---
 
-✅ COPY/PASTE INTO: docs/projects/vscode-twinpeaks.md
+## Install the Twin Peaks VSIX
 
-(or wherever you keep project pages)
+### **1. Upload or place the VSIX file**
+Place the file:
 
+```
+twinpeaks-theme-pack-1.0.0.vsix
+```
 
----
+somewhere easy to access, such as:
 
-Twin Peaks VS Code Extension Project
-
-Red Room Theme + Lodge Icon Pack + VSIX Packaging & Deployment
-
-This document outlines the full process of creating a Twin Peaks–inspired VS Code extension, including:
-
-A custom color theme
-
-A full icon theme pack
-
-Packaging into a VSIX installable extension
-
-Uploading the project to GitHub for version control
-
-
-All commands were executed on pacard-sawmill inside the user environment osirisortiz.
-
+```
+~/projects/vscode-twinpeaks/
+```
 
 ---
 
-## 🏞️ 1. Project Overview
-
-This project creates a complete Visual Studio Code extension containing:
-
-Twin Peaks: Red Room color theme
-
-Custom Twin Peaks Lodge Icon Pack (folders + file icon associations)
-
-Packaged as a .vsix file
-
-Stored in a GitHub repository: vscode-twinpeaks
-
-
-The extension is portable, installable, and can be distributed or added to code-server.
-
+### **2. Install in VS Code (Desktop)**
+Open VS Code → Extensions sidebar →  
+Click **⋮ (three dots)** → **Install from VSIX…** → select the file.
 
 ---
 
-## 📁 2. Create Project Directory
+### **3. Install in code-server**
+Use:
 
-mkdir -p ~/projects/vscode-twinpeaks/{themes,icon-theme}
-cd ~/projects/vscode-twinpeaks
-
-
----
-
-## 📦 3. Create package.json
-
-This file defines the extension metadata and tells VS Code what themes and icons you provide.
-
-{
-  "name": "twinpeaks-theme-pack",
-  "displayName": "Twin Peaks: Lodge Pack",
-  "description": "Twin Peaks inspired VS Code experience: Red Room theme + Lodge icon pack.",
-  "version": "1.0.0",
-  "publisher": "osirisortiz",
-  "engines": {
-    "vscode": "^1.70.0"
-  },
-  "categories": ["Themes"],
-  "icon": "icon-theme/extension-icon.png",
-  "contributes": {
-    "themes": [
-      {
-        "label": "Twin Peaks: Red Room",
-        "uiTheme": "vs-dark",
-        "path": "./themes/twinpeaks-red-room-color-theme.json"
-      }
-    ],
-    "iconThemes": [
-      {
-        "id": "twinpeaks-icons",
-        "label": "Twin Peaks: Lodge Icons",
-        "path": "./icon-theme/twinpeaks-icons.json"
-      }
-    ]
-  }
-}
-
-
----
-
-## 🎨 4. Add the Red Room Theme File
-
-nano themes/twinpeaks-red-room-color-theme.json
-
-Paste the full theme JSON (already inside your project).
-
-
----
-
-## 🪵 5. Add Icon Pack Files
-
-SVGs placed in:
-
-~/projects/vscode-twinpeaks/icon-theme/
-
-Includes:
-
-folder-redroom.svg
-
-folder-redroom-open.svg
-
-folder-log-lady.svg
-
-folder-ghostwood.svg
-
-folder-rrdiner.svg
-
-file-casefile.svg
-
-file-log.svg
-
-file-owl.svg
-
-file-firewalk.svg
-
-extension-icon.png
-
-twinpeaks-icons.json
-
-
-Check structure:
-
-tree ~/projects/vscode-twinpeaks
-
-
----
-
-## 🔧 6. Install Node + NVM + VSCE
-
-Install NVM:
-
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-
-Activate:
-
-export NVM_DIR="$HOME/.nvm"
-. "$NVM_DIR/nvm.sh"
-
-Install Node:
-
-nvm install 20
-
-Install vsce:
-
-npm install -g @vscode/vsce
-
-Verify:
-
-vsce -V
-
-
----
-
-## 📦 7. Package VSIX Extension
-
-cd ~/projects/vscode-twinpeaks
-vsce package --allow-missing-repository --no-git-tag-version --no-update-package-json
-
-Output example:
-
-Packaged: twinpeaks-theme-pack-1.0.0.vsix
-
-Verify file:
-
-ls *.vsix
-
-
----
-
-## 🚀 8. Install VSIX into code-server
-
+```bash
 code-server --install-extension twinpeaks-theme-pack-1.0.0.vsix
+```
 
-Reload window → Select:
-
-Color Theme: Twin Peaks: Red Room
-
-File Icon Theme: Twin Peaks: Lodge Icons
-
-
+Reload the browser tab.
 
 ---
 
-## 🌐 9. Upload Project to GitHub
+### **4. Activate the theme & icons**
 
-Install GitHub CLI:
+Press **F1** → select:
 
-sudo apt install gh
+- **Preferences: Color Theme → Twin Peaks: Red Room**
+- **Preferences: File Icon Theme → Twin Peaks: Lodge Icons**
 
-Authenticate:
+---
 
+## Repository Setup (GitHub)
+
+### 1. Install GitHub CLI
+
+```bash
+sudo apt install gh -y
+```
+
+---
+
+### 2. Authenticate GitHub CLI
+
+```bash
 gh auth login
+```
 
-Create GitHub repo:
+Choose:
+- GitHub.com  
+- HTTPS  
+- Yes to git credential login  
+- Authenticate with browser  
 
+---
+
+### 3. Create the repository
+
+From inside the project folder:
+
+```bash
+cd ~/projects/vscode-twinpeaks
 gh repo create vscode-twinpeaks --public --source=. --remote=origin --push
+```
 
-Your repo is now live and synced.
-
-
----
-
-## 📌 MkDocs Navigation Entry
-
-Paste this into your mkdocs.yml under your Projects section:
-
-- Twin Peaks VS Code Extension: projects/vscode-twinpeaks.md
-
+Your repo is now live on GitHub.
 
 ---
 
-## 🧾 Changelog
+## MkDocs Navigation Entry
 
-Last Updated: {{ date }}
-Author: Osiris Ortiz (Agent Osiris)
+Add this to `mkdocs.yml` under your desired section:
 
-Changes:
-
-Initial creation of Twin Peaks VS Code extension
-
-Added Red Room theme
-
-Added complete Lodge icon pack
-
-Packaged extension into VSIX
-
-Uploaded project to GitHub
-
-Created MkDocs documentation
-
-
+```yaml
+  - Twin Peaks VS Code Theme Pack: vscode-twinpeaks.md
+```
 
 ---
 
-🕵️ “Every day, once a day, give yourself a present.
-Today’s present: your own VS Code theme.” —Special Agent Dale Cooper
+## Changelog
 
-If you want more variants (Blue Rose, Ghostwood Pines, Black Lodge), we can add them to the extension and bump the version.
+### **v1.0.0 – Initial Release**
+- Added Red Room VS Code color theme  
+- Added Lodge Icon Pack (folders + files)  
+- Packaged full extension as VSIX  
+- Set up GitHub repo structure  
+- Documented installation and usage  
+
+---
+
+*Prepared in cooperation with Agent Cooper. The owls are watching.*
