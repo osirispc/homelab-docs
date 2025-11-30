@@ -1,29 +1,32 @@
 # 🧹 Automated Downloads Cleanup (RARR Stack)
 
-This guide documents your fully automated **download cleanup system** running on **thewhitelodge**.  
-It keeps your `/mnt/data/downloads` share clean by automatically deleting old, completed downloads — while preserving:
+Your automated cleanup system on **thewhitelodge** removes old, completed downloads from:
 
-- 🟪 The `incomplete/` folder  
-- 🆕 Newly imported items (younger than X days)  
-- 🔒 Anything currently being processed by Radarr/Sonarr  
+/mnt/data/downloads
 
-Default retention: **3 days**.
+while *preserving*:
+
+- 🟪 `/mnt/data/downloads/incomplete/`
+- 🆕 Newly imported items
+- 🗓️ Anything younger than **3 days** (configurable)
+
+This prevents clutter, saves storage, and keeps Radarr/Sonarr working smoothly.
 
 ---
 
 ## 📁 Directory Structure
 
-Your downloads directory is structured like this:
+Your downloads share is laid out like:
 
-/mnt/data/downloads ├── incomplete/      # ⛔ Do NOT delete — active downloads ├── Movie1/ ├── Movie2/ ├── TV Show/ └── etc...
+/mnt/data/downloads ├── incomplete/      # DO NOT DELETE — active downloads ├── Movie1/ ├── Movie2/ ├── TV Show/ └── Other items...
 
-All folders **except** `incomplete/` are safe to remove after they are older than X days *and* imported by Radarr/Sonarr.
+Everything **except** `incomplete/` is eligible for cleanup once it's older than **X** days.
 
 ---
 
 ## 🧽 Cleanup Script
 
-The cleanup script is located at:
+### 📍 Script Location
 
 /usr/local/bin/cleanup-downloads.sh
 
@@ -32,7 +35,7 @@ The cleanup script is located at:
 ```bash
 #!/bin/bash
 # cleanup-downloads.sh
-# Automatically clean up completed RARR downloads.
+# Automatically clean up completed RARR downloads older than X days.
 
 DOWNLOADS_DIR="/mnt/data/downloads"
 INCOMPLETE_NAME="incomplete"
@@ -51,69 +54,33 @@ find "$DOWNLOADS_DIR" \
 
 echo "Cleanup complete." >> "$LOGFILE"
 
-
----
-
-🔒 Permissions
-
-Make the script executable:
+🔐 Set Permissions
 
 sudo chmod +x /usr/local/bin/cleanup-downloads.sh
 
 
 ---
 
-⏱️ Automated Nightly Cleanup (2:00 AM)
+⏱️ Enable Nightly Cron Job (2:00 AM)
 
-Configure cron:
+Open the root crontab:
 
 sudo crontab -e
 
-Add the nightly rule:
+Add:
 
 0 2 * * * /usr/local/bin/cleanup-downloads.sh
 
 
 ---
 
-ℹ️ How It Works
+🧪 Testing & Verification
 
-✔ Keeps Safe
-
-incomplete/
-
-Anything < 3 days old
-
-Any download still being processed or imported
-
-
-✔ Deletes
-
-Completed download folders
-
-Anything older than 3 days
-
-Leftovers from Radarr/Sonarr imports
-
-
-📄 Logs saved at:
-
-/var/log/cleanup-downloads.log
-
-View logs:
-
-tail -n 50 /var/log/cleanup-downloads.log
-
-
----
-
-🧪 Manual Testing
-
-Run manually:
+▶️ Run Manually
 
 sudo /usr/local/bin/cleanup-downloads.sh
 
-Dry-run view of what would be deleted:
+🧐 Dry Run (See What WOULD Be Deleted)
 
 sudo find /mnt/data/downloads \
   -mindepth 1 \
@@ -123,17 +90,39 @@ sudo find /mnt/data/downloads \
   -mtime +3 \
   -print
 
+📄 Check Logs
+
+/var/log/cleanup-downloads.log
+
+Tail:
+
+tail -n 50 /var/log/cleanup-downloads.log
+
 
 ---
 
 🪵 Change Log
 
-2025-11-30 — Initial version created with:
+2025-11-30 — Initial version
 
-Automated nightly cleanup
+Added X-day retention
 
-X-day protection rule
+Cleanup exclusions
 
-Logging added
+Crontab automation
 
-MkDocs-friendly formatting
+Logging support
+
+
+---
+
+Agent…  
+This formatting now matches **exactly** the clean procedural style from your Unbound page — headers, spacing, icons, copy-ready blocks, the works.
+
+If you'd like, I can now:
+
+✅ Generate the matching **mkdocs.yml navigation entry**  
+✅ Create a **Twin Peaks–themed variant**  
+✅ Add this to your **homelab-docs repo** layout you use everywhere  
+
+Just say the word.
