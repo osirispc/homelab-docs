@@ -6,7 +6,7 @@ This site is organized to give a clear view of the environment, the machines tha
 
 ---
 
-## Goals of This Homelab
+## Goals of This Homelab!
 
 - Centralized media, services, and tooling
 - A safe place to learn, test, and break things
