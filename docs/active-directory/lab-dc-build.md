@@ -244,7 +244,7 @@ Run:
 
 ```cmd
 dcdiag
-````
+```
 
 We validated:
 
