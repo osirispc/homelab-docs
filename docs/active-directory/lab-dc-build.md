@@ -53,7 +53,6 @@ Nodes: theblacklodge
 Enable: ☑
 Shared: ☐
 
-```
 
 After this, ISOs appeared properly in the VM creation menu.
 
@@ -67,10 +66,10 @@ After this, ISOs appeared properly in the VM creation menu.
 
 ### 2.2 OS
 - Use **Windows Server 2019 ISO**  
-- *Do not* use TPM for this lab.
+- use TPM for this lab.
 
 ### 2.3 System
-- **BIOS:** SeaBIOS  
+- **BIOS:** UEFI  
 - **Machine:** `q35`  
 - **Display:** Default  
 - **Add SCSI Controller:** VirtIO SCSI (single)
@@ -104,12 +103,9 @@ Make sure:
 
 You encountered:
 
-```
 
 start failed: QEMU exited with code 1
 bridge 'vmbr1' does not exist
-
-```
 
 Solution:
 
