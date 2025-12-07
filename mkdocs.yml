@@ -44,9 +44,7 @@ plugins:
 # NAVIGATION
 # -----------------------------
 nav:
-  - Overview:
-      - Home: index.md
-      - Project Dashboard: project-dashboard.md
+  - Overview: index.md
 
   - Infrastructure:
       - Infrastructure Overview: infra/overview.md

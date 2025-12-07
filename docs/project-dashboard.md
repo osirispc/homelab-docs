@@ -1,8 +1,3 @@
-Here you go, Agent — clean, sharp, and ready to drop directly into your MkDocs docs/ folder as project-dashboard.md. Just paste and save. No extra formatting needed.
-
-
----
-
 🗂️ Project Dashboard
 
 A centralized index of all active development, documentation, and infrastructure projects on pacard-sawmill.
