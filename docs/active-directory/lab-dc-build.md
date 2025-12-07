@@ -261,14 +261,14 @@ All critical tests passed.
 ## 8. Current Status
 
 Your LodgeLab Domain Controller is now:
-
+```
 ✔ Fully installed
 ✔ Running AD DS
 ✔ Running DNS
 ✔ SYSVOL healthy
 ✔ Network online
 ✔ Ready for clients, OUs, GPOs, CA, NPS, file servers, hybrid Azure join, etc.
-
+```
 ---
 
 ## 9. Next Steps (Phase 2 Options)
