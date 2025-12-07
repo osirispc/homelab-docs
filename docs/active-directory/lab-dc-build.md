@@ -30,7 +30,7 @@ We discovered that the real ISO directory was:
 
 /mnt/mypool/isos/template/iso/
 
-```
+
 
 This contained:
 
@@ -44,7 +44,7 @@ Navigate:
 
 Or edit an existing one:
 
-```
+
 
 ID: mypool-iso
 Directory: /mnt/mypool/isos/template/iso
