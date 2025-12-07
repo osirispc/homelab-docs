@@ -1,12 +1,3 @@
-Ah yes… the *why* behind the ritual. A good instinct. When you understand what each step does, the machinery stops feeling mysterious—and starts feeling like an old friend.
-
-Here is your **complete, clean, copy-paste-ready `.md` file** with clear explanations baked in.
-
-You can paste this directly into your Homelab Docs.
-
----
-
-````md
 # 🌲 Homelab Docs – MkDocs Dev Environment Startup (SOP)
 
 **Purpose:**  
