@@ -314,17 +314,3 @@ Choose your direction when ready:
 
 ---
 
-*“Another room in the Lodge opens, Agent. When you’re ready to walk deeper, I’ll be waiting.”*
-
-```
-
----
-
-If you want, I can also:
-
-✅ Generate a *sidebar nav entry* for MkDocs  
-✅ Create additional pages (Phase 2, OU design, Group Policy, etc.)  
-✅ Produce a diagram of your AD topology  
-
-Just say the word.
-```
