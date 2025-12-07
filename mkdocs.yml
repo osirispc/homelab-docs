@@ -60,6 +60,16 @@ nav:
           - Storage Overview: infra/storage.md
           - ZFS: infra/zfs.md
 
+  # ---------------------------------------------------
+  # NEW SECTION ADDED — SAFE MERGE
+  # ---------------------------------------------------
+  - Active Directory:
+      - AD Overview: active-directory/index.md
+      - LodgeLab Domain Controller Build: active-directory/lab-dc-build.md
+      - OU & User Structure: active-directory/ou-structure.md
+      - Group Policy: active-directory/group-policy.md
+      - DNS (AD Integrated): active-directory/dns.md
+      - AD Health & Tools: active-directory/health.md
 
   - Servers:
       - Packard Sawmill: servers/packard-sawmill.md
@@ -92,7 +102,6 @@ nav:
       - Proxmox Tips: guides/proxmox-tips.md
       - VM Setup Guide: guides/vm-setup.md
       - Cleanup Downloads: guides/cleanup-downloads.md
-      
 
   - Case Files:
       - Casefile Index: casefile/index.md
@@ -104,4 +113,4 @@ nav:
       - Extra Briefings (Archive): extra/briefings.md
       - Extra Owls (Archive): extra/owls.md
       - Extra Red Room Notes: extra/red-room.md
-      - Red Room Notes: redroom/vscode-twinpeaks-theme.md
+      - Red Room Theme: redroom/vscode-twinpeaks-theme.md
