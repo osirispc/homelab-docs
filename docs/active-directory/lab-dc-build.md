@@ -1,12 +1,3 @@
-Absolutely, Agent Osiris.
-Here is a **fully formatted MkDocs-ready `.md` file** documenting everything we did today — from creating storage, fixing Proxmox configs, building the VM, installing Server 2019, loading VirtIO drivers, and promoting to a DC.
-
-You can **copy/paste this entire block into a file like**
-`/docs/active-directory/lab-dc-build.md`
-
----
-
-```markdown
 # Building the LodgeLab Domain Controller  
 *Windows Server 2019 on Proxmox (Q35 + VirtIO + AD DS)*
 
@@ -35,7 +26,7 @@ This guide reflects the exact real-time setup performed on **theblacklodge** nod
 ### 1.1 Confirm correct storage path
 We discovered that the real ISO directory was:
 
-```
+
 
 /mnt/mypool/isos/template/iso/
 
