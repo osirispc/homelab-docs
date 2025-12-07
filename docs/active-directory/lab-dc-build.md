@@ -238,7 +238,7 @@ thelorgelab\Administrator
 
 ---
 
-## 7. Validating Domain Controller Health
+### 7. Validating Domain Controller Health
 
 Run:
 
