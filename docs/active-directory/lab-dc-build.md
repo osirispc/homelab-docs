@@ -234,7 +234,7 @@ Upon reboot, Windows logs in under:
 
 thelorgelab\Administrator
 
-````
+```
 
 ---
 
