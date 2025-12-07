@@ -16,6 +16,7 @@ The OU layout follows three core principles:
 
 ## Recommended OU Layout
 
+'''
 thelorgelab.local
 │
 ├── _Admin
@@ -39,6 +40,7 @@ thelorgelab.local
 ├── Security Groups
 ├── Distribution Groups
 └── Role-Based Access Groups
+'''
 
 ---
 
