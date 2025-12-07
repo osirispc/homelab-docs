@@ -11,7 +11,7 @@ Use this **every time** you want to edit or work on your documentation.
 
 ```bash
 cd ~/projects/homelab-docs
-````
+```
 
 ### What this does:
 
